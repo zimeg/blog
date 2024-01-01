@@ -9,17 +9,18 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `chore` license: include this new year with mit 2024-01-01
 - `fix` [code][code]: use absolute links to subpages 2024-01-01
 - `arts` [music][music]: soundcloud added 2023-12-31
-- `build` [deploy]: publish changes automatically 2023-12-31
+- `build` deploy: publish changes automatically 2023-12-31
 - `docs` [changelog]: record repository updates 2023-12-31
 - `experience` [slack][slack]: description added 2023-12-31
 - `experience` [hack4impact][hack4impact]: description added 2023-12-31
 - `experience` [calpoly][calpoly]: description added 2023-12-31
 - `experience` [high-school][high-school]: description added 2023-12-31
 - `experience` [minecraft][minecraft]: description added 2023-12-31
-- `feat` [analytics]: log page visits 2023-12-13
-- `fix` [deploy]: downgrade pages for compatibility 2023-12-31
+- `feat` analytics: log page visits 2023-12-13
+- `fix` deploy: downgrade pages for compatibility 2023-12-31
 - `me` [profile][profile]: interests added 2023-12-31
 - `me` [contact][contact]: email added 2023-12-31
 - `notes` [rss][notes]: feed created 2023-12-31
