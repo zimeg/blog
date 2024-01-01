@@ -1,0 +1,10 @@
+{
+    "extends": "astro/tsconfigs/strict",
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.astro",
+        "*.cjs",
+        "*.mjs",
+        "src/pages/*.xml.js"
+    ]
+}

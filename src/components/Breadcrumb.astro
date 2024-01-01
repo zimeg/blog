@@ -1,0 +1,52 @@
+---
+import Link from "../components/Link.astro";
+
+const { href, blank } = Astro.props;
+
+function isCurrentCollection(path: string) {
+    if (path === "/") {
+        return Astro.url.pathname === path;
+    }
+    return Astro.url.pathname.startsWith(path);
+}
+
+function createBreadcrumb(path: string) {
+    if (isCurrentCollection(path)) {
+        if (path === "/") {
+            return "home";
+        }
+        return Astro.url.pathname.split("/").splice(1)
+            .filter((name) => name !== "")
+            .join("/");
+    }
+    return null;
+}
+
+const breadcrumb = createBreadcrumb(href);
+
+function createLink(piece: number) {
+    if (breadcrumb === "home") {
+        return "/";
+    }
+    const path = breadcrumb?.split("/") ?? [];
+    return `/${path.splice(0, piece + 1).join("/")}`;
+}
+
+const style = isCurrentCollection(href)
+    ? "font-mono text-sm underline bg-amber-100 hover:bg-amber-200"
+    : "font-mono underline hover:bg-amber-200";
+
+---
+
+{breadcrumb
+    ? breadcrumb.split("/").map((bread, piece) => <a href={createLink(piece)} class={style} target={blank
+        ? "_blank"
+        : "_parent"}>{
+            piece === breadcrumb.split("/").length - 1
+                ? <span class="bg-amber-200 hover:bg-amber-300">{bread}</span>
+                : <span class="">{bread}</span><span class="">/</span>
+        }</a>)
+    : <Link href={href}>
+        <slot />
+    </Link>
+}

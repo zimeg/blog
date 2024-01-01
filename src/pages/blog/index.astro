@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "../../layouts/Layout.astro";
+
+import AstroDate from "../../components/Date.astro";
+import Link from "../../components/Link.astro";
+
+const notes = await getCollection("notes");
+---
+<Layout title="blog">
+    <h1>another weblog and other words</h1>
+    <p>various collections of my posts are gathering here.</p>
+
+    <h2>momentary thoughts</h2>
+    <p>and quicker jots. all in the linear fashion of life.</p>
+    <p>
+        <Link href="/notes.xml">follow the rss</Link>.
+        <Link href="/blog/note">continued notes</Link>.
+    </p>
+    <ul>
+        {notes.filter((note) => !note.data.draft)
+            .sort((p0, p1) => {
+                const d0 = new Date(p0.data.posted);
+                const d1 = new Date(p1.data.posted);
+                return d1.getTime() - d0.getTime();
+            })
+            .map((note) => <li>
+                <a href={`/blog/note/${note.slug}`}>{note.data.title}</a>
+                <AstroDate posted={note.data.posted} />
+            </li>)}
+    </ul>
+
+    <h2>longer ramblings</h2>
+    <p>oh so many writings remain in draft...</p>
+    <p>please check back at another time!</p>
+</Layout>

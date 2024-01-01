@@ -1,0 +1,13 @@
+# development artifacts
+.astro
+*.bak
+*.swp
+
+# build outputs
+dist/
+
+# pile of dependencies
+node_modules/
+
+# logs leftovers
+npm-debug.log*

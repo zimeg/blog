@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+    const experiences = await getCollection("experiences");
+    return experiences.map((experience) => ({
+        params: { experience: experience.slug },
+        props: { experience },
+    }));
+}
+
+const { experience } = Astro.props;
+const { Content } = await experience.render();
+---
+<Layout title={`code @ ${experience.data.organization}`}>
+    <h1>{experience.data.title} @ {experience.data.organization}</h1>
+    <Content />
+</Layout>

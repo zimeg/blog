@@ -1,0 +1,56 @@
+# changelog
+
+all notable changes to this site will be documented here.
+
+the format is inspired by [keep a changelog][changelog] and [rknight][rknight]
+with some flavor of [calendar versioning][calver].
+
+tags follow [conventional commits][commits] but might reference a changed page.
+
+## released
+
+- `arts` [music][music]: soundcloud added 2023-12-31
+- `build` [deploy]: publish changes automatically 2023-12-31
+- `docs` [changelog]: record repository updates 2023-12-31
+- `experience` [slack][slack]: description added 2023-12-31
+- `experience` [hack4impact][hack4impact]: description added 2023-12-31
+- `experience` [calpoly][calpoly]: description added 2023-12-31
+- `experience` [high-school][high-school]: description added 2023-12-31
+- `experience` [minecraft][minecraft]: description added 2023-12-31
+- `feat` [analytics]: log page visits 2023-12-13
+- `me` [profile][profile]: interests added 2023-12-31
+- `me` [contact][contact]: email added 2023-12-31
+- `notes` [rss][notes]: feed created 2023-12-31
+- `project` [emporia-time][emporia-time]: description added 2023-12-31
+- `project` [poly-plague][poly-plague]: description added 2023-12-31
+- `project` [blog][blog]: description added 2023-12-31
+- `project` [walk][walk]: description added 2023-12-31
+- `project` [receipt-printer][receipt-printer]: description added 2023-12-31
+- `project` [807.band][807.band]: description added 2023-12-31
+- `project` [hac-sessions][hac-sessions]: description added 2023-12-31
+- `project` [unblocked-reddit][unblocked-reddit]: description added 2023-12-31
+
+<!-- a collection of links -->
+[calver]: https://calver.org
+[changelog]: https://keepachangelog.com/en/1.1.0/
+[commits]: https://www.conventionalcommits.org/en/v1.0.0/
+[rknight]: https://rknight.me/log/
+
+<!-- a collection of pages -->
+[807.band]: https://o526.net/code/807
+[blog]: https://o526.net/code/blog
+[calpoly]: https://o526.net/code/calpoly
+[contact]: https://o526.net/me/contact
+[emporia-time]: https://o526.net/code/emporia-time
+[hac-sessions]: https://o526.net/code/hac-sessions
+[hack4impact]: https://o526.net/code/hack4impact
+[high-school]: https://o526.net/code/high-school
+[minecraft]: https://o526.net/code/minecraft
+[music]: https://o526.net/arts#musical-notes
+[notes]: https://o526.net/blog/note
+[poly-plague]: https://o526.net/code/poly-plague
+[profile]: https://o526.net/me/profile
+[receipt-printer]: https://o526.net/code/receipt-printer
+[slack]: https://o526.net/code/slack
+[unblocked-reddit]: https://o526.net/code/unblocked-reddit
+[walk]: https://o526.net/code/walk

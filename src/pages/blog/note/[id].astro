@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "../../../layouts/Layout.astro";
+
+import AstroDate from "../../../components/Date.astro";
+
+export async function getStaticPaths() {
+    const notes = await getCollection("notes");
+    return notes.map((note) => ({
+        params: { id: note.slug },
+        props: { note },
+    }));
+}
+
+const { note } = Astro.props;
+const { Content } = await note.render();
+---
+<Layout title={note.slug}>
+    <h1>{note.data.title}</h1>
+    <p>
+        {'> '}
+        <AstroDate posted={note.data.posted} />
+    </p>
+    <Content />
+</Layout>

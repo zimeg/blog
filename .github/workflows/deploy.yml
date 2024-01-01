@@ -1,0 +1,35 @@
+name: Share to the web
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    name: Build the blog
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the changes
+        uses: actions/checkout@v4
+      - name: Package a distribution
+        uses: withastro/action@v1
+        with:
+          node-version: 20
+
+  deploy:
+    name: Deploy the site
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Write to pages
+        id: deployment
+        uses: actions/deploy-pages@v4
