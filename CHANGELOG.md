@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `fix` [code][code]: use absolute links to subpages 2024-01-01
 - `arts` [music][music]: soundcloud added 2023-12-31
 - `build` [deploy]: publish changes automatically 2023-12-31
 - `docs` [changelog]: record repository updates 2023-12-31
@@ -41,6 +42,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 [807.band]: https://o526.net/code/807
 [blog]: https://o526.net/code/blog
 [calpoly]: https://o526.net/code/calpoly
+[code]: https://o526.net/code
 [contact]: https://o526.net/me/contact
 [emporia-time]: https://o526.net/code/emporia-time
 [hac-sessions]: https://o526.net/code/hac-sessions
