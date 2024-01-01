@@ -18,6 +18,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 - `experience` [high-school][high-school]: description added 2023-12-31
 - `experience` [minecraft][minecraft]: description added 2023-12-31
 - `feat` [analytics]: log page visits 2023-12-13
+- `fix` [deploy]: downgrade pages for compatibility 2023-12-31
 - `me` [profile][profile]: interests added 2023-12-31
 - `me` [contact][contact]: email added 2023-12-31
 - `notes` [rss][notes]: feed created 2023-12-31
