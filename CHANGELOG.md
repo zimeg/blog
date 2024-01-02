@@ -11,6 +11,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 - `chore` [blog]: create a drafting directory 2024-01-01
 - `chore` license: include this new year with mit 2024-01-01
+- `feat` [blog][blog]: rss feed created 2024-01-01
 - `fix` [code][code]: use absolute links to subpages 2024-01-01
 - `arts` [music][music]: soundcloud added 2023-12-31
 - `build` deploy: publish changes automatically 2023-12-31
