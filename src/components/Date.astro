@@ -18,9 +18,20 @@ class AstroDate extends HTMLElement {
         super();
 
         const posted = new Date(this.dataset.posted!);
+        let isoFormat = true;
         const time = this.querySelector('time')!;
         time.title = "a date, in ISO 8601 format";
         time.innerText = this.dateIntoISO(posted);
+        time.addEventListener('click', () => {
+            isoFormat = !isoFormat;
+            if (isoFormat) {
+                time.title = "a date, in ISO 8601 format";
+                time.innerText = this.dateIntoISO(posted);
+            } else {
+                time.title = "a date, formatted to five day weeks";
+                time.innerText = this.dateIntoFives(posted);
+            }
+        });
     }
 
     /**
@@ -40,6 +51,17 @@ class AstroDate extends HTMLElement {
         const year = posted.getUTCFullYear();
         const month = String(posted.getUTCMonth() + 1).padStart(2, "0");
         const day = String(posted.getUTCDate()).padStart(2, "0");
+        return year + "-" + month + "-" + day;
+    }
+
+    /**
+     * dateIntoFives represents a Date object in five day weeks
+     */
+    dateIntoFives(posted: Date): string {
+        const year = posted.getUTCFullYear();
+        const days = this.daysIntoYear(posted);
+        const month = Math.ceil(days / 30).toString().padStart(2, "0");
+        const day = (((days - 1) % 30) + 1).toString().padStart(2, "0");
         return year + "-" + month + "-" + day;
     }
   }
