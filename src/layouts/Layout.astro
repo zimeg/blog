@@ -17,6 +17,8 @@ const { title } = Astro.props;
         <meta name="author" content="zim" />
         <meta name="description" content="random words and rambling musings to share" />
         <title>{title}</title>
+        <link rel="alternate" type="application/rss+xml" href="/posts.xml" title="posts of longer ramblings" />
+        <link rel="alternate" type="application/rss+xml" href="/notes.xml" title="notes of momentary jots" />
         <script defer data-domain="o526.net" src="https://plausible.io/js/script.js"></script>
     </head>
     <body>
