@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `chore` [blog]: create a drafting directory 2024-01-01
 - `chore` license: include this new year with mit 2024-01-01
 - `fix` [code][code]: use absolute links to subpages 2024-01-01
 - `arts` [music][music]: soundcloud added 2023-12-31
