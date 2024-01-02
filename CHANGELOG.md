@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `blog` [five-day-week][five-day-week]: post published 2024-01-01
 - `chore` [blog]: create a drafting directory 2024-01-01
 - `chore` license: include this new year with mit 2024-01-01
 - `feat` [blog][blog]: rss feed created 2024-01-01
@@ -60,3 +61,6 @@ tags follow [conventional commits][commits] but might reference a changed page.
 [slack]: https://o526.net/code/slack
 [unblocked-reddit]: https://o526.net/code/unblocked-reddit
 [walk]: https://o526.net/code/walk
+
+<!-- a collection of posts -->
+[five-day-week]: https://o526.net/blog/post/five-day-week

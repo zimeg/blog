@@ -1,0 +1,244 @@
+---
+title: the five day week
+posted: 2024-01-01
+---
+
+seven is an odd number. it also isn't a great divisor. yet we choose it when
+dividing the days of a year into weeks?
+
+five is also odd, but divides a bit more nicely into the year. quite a bit more
+nicely.
+
+## a modest division
+
+shorten weeks to five days. and adjust the current twelve months to have thirty
+days each.
+
+days can be called: onesday, twosday, threesday, foursday, fivesday.
+
+each month then has six equal weeks. this neglects about five or six days which
+trail as a standalone "nil" week.
+
+## calendar
+
+formatting the calendar is somewhat simple and included below for reference.
+
+review [basic comparisons to the traditional gregorian calendar][gregorian]
+also.
+
+|week|month| a| b| c| d| e|
+|----|-----|--|--|--|--|--|
+|   1| jan.| 1| 2| 3| 4| 5|
+|   2|     | 6| 7| 8| 9|10|
+|   3|     |11|12|13|14|15|
+|   4|     |16|17|18|19|20|
+|   5|     |21|22|23|24|25|
+|   6|     |26|27|28|29|30|
+|   7| feb.| 1| 2| 3| 4| 5|
+|   8|     | 6| 7| 8| 9|10|
+|   9|     |11|12|13|14|15|
+|  10|     |16|17|18|19|20|
+|  11|     |21|22|23|24|25|
+|  12|     |26|27|28|29|30|
+|  13| mar.| 1| 2| 3| 4| 5|
+|  14|     | 6| 7| 8| 9|10|
+|  15|     |11|12|13|14|15|
+|  16|     |16|17|18|19|20|
+|  17|     |21|22|23|24|25|
+|  18|     |26|27|28|29|30|
+|  19| apr.| 1| 2| 3| 4| 5|
+|  20|     | 6| 7| 8| 9|10|
+|  21|     |11|12|13|14|15|
+|  22|     |16|17|18|19|20|
+|  23|     |21|22|23|24|25|
+|  24|     |26|27|28|29|30|
+|  25| may.| 1| 2| 3| 4| 5|
+|  26|     | 6| 7| 8| 9|10|
+|  27|     |11|12|13|14|15|
+|  28|     |16|17|18|19|20|
+|  29|     |21|22|23|24|25|
+|  30|     |26|27|28|29|30|
+|  31| jun.| 1| 2| 3| 4| 5|
+|  32|     | 6| 7| 8| 9|10|
+|  33|     |11|12|13|14|15|
+|  34|     |16|17|18|19|20|
+|  35|     |21|22|23|24|25|
+|  36|     |26|27|28|29|30|
+|  37| jul.| 1| 2| 3| 4| 5|
+|  38|     | 6| 7| 8| 9|10|
+|  39|     |11|12|13|14|15|
+|  40|     |16|17|18|19|20|
+|  41|     |21|22|23|24|25|
+|  42|     |26|27|28|29|30|
+|  43| aug.| 1| 2| 3| 4| 5|
+|  44|     | 6| 7| 8| 9|10|
+|  45|     |11|12|13|14|15|
+|  46|     |16|17|18|19|20|
+|  47|     |21|22|23|24|25|
+|  48|     |26|27|28|29|30|
+|  49| sep.| 1| 2| 3| 4| 5|
+|  50|     | 6| 7| 8| 9|10|
+|  51|     |11|12|13|14|15|
+|  52|     |16|17|18|19|20|
+|  53|     |21|22|23|24|25|
+|  54|     |26|27|28|29|30|
+|  55| oct.| 1| 2| 3| 4| 5|
+|  56|     | 6| 7| 8| 9|10|
+|  57|     |11|12|13|14|15|
+|  58|     |16|17|18|19|20|
+|  59|     |21|22|23|24|25|
+|  60|     |26|27|28|29|30|
+|  61| nov.| 1| 2| 3| 4| 5|
+|  62|     | 6| 7| 8| 9|10|
+|  63|     |11|12|13|14|15|
+|  64|     |16|17|18|19|20|
+|  65|     |21|22|23|24|25|
+|  66|     |26|27|28|29|30|
+|  67| dec.| 1| 2| 3| 4| 5|
+|  68|     | 6| 7| 8| 9|10|
+|  69|     |11|12|13|14|15|
+|  70|     |16|17|18|19|20|
+|  71|     |21|22|23|24|25|
+|  72|     |26|27|28|29|30|
+
+|&ensp;&emsp;|&ensp;&emsp;| x| x| x| x| x|
+|------------|------------|--|--|--|--|--|
+|     ∅&ensp;|        nil.| 1| 2| 3| 4| 5|
+
+## ramification of change
+
+smooth social transition into new timekeepings is beyond the scope of this page.
+
+i imagine there would be complications and some things might break.
+
+instead the immediate benefits shall be touted and concerns quelled!
+
+### following the phases
+
+luna, our wonderful moon, [cycles through a full moon every 29.5 days][moon].
+
+### clocking out
+
+working a job monday through friday totals to 71.429% of week days.
+
+this is close enough to 70% for practical purposes.
+
+scheduling seven days of work across ten days brings opportunity for more
+asynchronous collaborations or perhaps more frequent days off without
+challenging existing arrangements around hours at a job.
+
+workers routinely grinding from 9-5 regain just one hour over ten days.
+
+### multiplying moduli
+
+constant multiples of five find familiar factors for the months and days.
+
+calculating the day of the week and difference between days becomes elementary.
+
+for example, jul. 24 is a foursday and happens 107 days before nov. 11.
+
+modeling this calendar in code then commands plain arrays instead of specialized
+libraries. compatibility with the current notwithstanding.
+
+### coins in quarters
+
+splitting a year into groups of four is customary and encouraged with an
+abundant number of weeks (72).
+
+composing 72 might happen with 4 groups of 18, forming 90 day sets. trisections
+are also possible using 3 groups of 24, making sets of 120.
+
+coincidentally 7200 minutes make up the 120 hours in a week.
+
+the degree of effective days (360) matches the roundness of a circle.
+
+### observed ceremony
+
+religious practices and cultural events often follow a weekly cadence.
+
+changing the calendar would cause challenge and i cannot propose a solution.
+this is merely a thought experiment.
+
+## remarks on related readings
+
+finding [alternative measurements][reform] has been considered multiple times.
+
+exploring every option is left as an exercise for the reader. below are a few
+brief reflections.
+
+### astronomical observations
+
+[the traditional chinese calendar signaled the solar signs and solstices][chinese]!
+
+lunisolar patterns predicated month lengths and every event followed.
+
+natural sequences are valued but frequent adjustments to account for seasonal
+drifts are inconvenient.
+
+### perennial posits
+
+[the international fixed calendar set consistent days to dates each year][cotsworth]!
+
+equal months of 28 days standardizes weekdays. but with 13 months.
+
+five day weeks achieve this anyways and without the unlucky number.
+
+### ten days a week
+
+[the egyptian civil calendar pioneered thirty day months long, long ago][egyptian]!
+
+weeks were metered by ten days forming twelve months which about matched a five
+day scheme. though leap years were omitted.
+
+roman reform added leap years but eventually gregorian was adopted. modern
+[ethiopian calendars][ethiopian] retain 30 day months albeit 7 day weeks.
+
+truly original innovation shown ahead of its time.
+
+[the temporary french republican calendar placed ten days in the week][french]!
+
+revolutionary removal of royalty and religion requested a new calendar.
+decimalization was desired with ten appearing across times and dates.
+
+similar balance between months was achieved with thirty day months and
+complementary days trailing.
+
+a shifted start of the year and starting year makes this change drastic. longer
+hours in a day makes it unappealing.
+
+### ten months a year
+
+[the legendary calendar of romulus fixed ten months and ignored two][romulus]!
+
+months flipped between 30 and 31 days so a year was only 304 days long. winter
+months were left unorganized without farming tasks.
+
+some accounts claim eight day weeks. organization feels forgotten.
+
+[the base ten numbering system is applied to everything in a deciyear][deciyear]!
+
+ten months make a year and have 36 days each - 4 weeks of 9 days.
+
+consistency in months is appreciated but the weeks become so long. subdividing a
+year begins to split months too.
+
+millidays make time which simplifies calculations but changes much.
+
+## dated idea
+
+tuesday isn't real. time is only continuous and we build our constructs around
+it.
+
+be in this moment.
+
+<!-- a collection of links -->
+[chinese]: https://en.wikipedia.org/wiki/Chinese_calendar#Horology
+[cotsworth]: https://en.wikipedia.org/wiki/International_Fixed_Calendar
+[deciyear]: https://deciyear.com
+[ethiopian]: https://www.ethcalendar.com
+[egyptian]: https://en.wikipedia.org/wiki/Egyptian_calendar#Civil_calendar
+[french]: https://en.wikipedia.org/wiki/French_Republican_calendar#Ten_days_of_the_week
+[gregorian]: /blog/post/five-day-week/gregorian
+[moon]: https://www.iop.org/explore-physics/moon/phases-and-orbits-moon
+[reform]: https://en.wikipedia.org/wiki/Calendar_reform
+[romulus]: https://en.wikipedia.org/wiki/Roman_calendar#Calendar_of_Romulus
