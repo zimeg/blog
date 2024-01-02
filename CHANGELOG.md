@@ -12,6 +12,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 - `blog` [five-day-week][five-day-week]: post published 2024-01-01
 - `chore` [blog]: create a drafting directory 2024-01-01
 - `chore` license: include this new year with mit 2024-01-01
+- `chore` license: colocate cc-by-4.0 in repo root 2024-01-01
 - `feat` [blog][blog]: rss feed created 2024-01-01
 - `feat` dates: toggle between five day formatting 2024-01-01
 - `feat` mail: setup email list subscription 2024-01-01

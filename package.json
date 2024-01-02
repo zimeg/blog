@@ -3,6 +3,7 @@
     "type": "module",
     "version": "2023.12.31",
     "private": true,
+    "license": "(MIT OR CC-BY-4.0)",
     "scripts": {
         "dev": "astro dev",
         "local": "astro dev --host",
