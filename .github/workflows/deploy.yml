@@ -18,14 +18,24 @@ jobs:
     steps:
       - name: Checkout the changes
         uses: actions/checkout@v4
-      - name: Package a distribution
-        uses: withastro/action@v1
+      - name: Setup a runtime
+        uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+          cache-dependency-path: ./package-lock.json
+      - name: Install dependencies
+        run: npm install
+      - name: Package a distribution
+        run: npm run build
+      - name: Upload artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist/
 
   deploy:
     name: Deploy the site
-    if: ${{ github.event != 'pull_request' }}
+    if: ${{ github.event_name != 'pull_request' }}
     needs: build
     runs-on: ubuntu-latest
     environment:
@@ -34,4 +44,4 @@ jobs:
     steps:
       - name: Write to pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
