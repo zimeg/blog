@@ -25,7 +25,7 @@ jobs:
           cache: npm
           cache-dependency-path: ./package-lock.json
       - name: Install dependencies
-        run: npm install --omit=dev --omit=optional
+        run: npm install --omit=dev
       - name: Package a distribution
         run: npm run build
       - name: Upload artifacts
