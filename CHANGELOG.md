@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `build` deps: import shiki highlighting implict 2024-01-06
 - `chore` deps: schedule automatic update checks 2024-01-06
 - `ci` build: attempt to build the site on pulls 2024-01-06
 - `ci` deps: upload pages with latest versions 2024-01-06
