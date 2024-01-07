@@ -1,6 +1,7 @@
 name: Share to the web
 
 on:
+  pull_request:
   push:
     branches: [ main ]
   workflow_dispatch:
@@ -34,6 +35,7 @@ jobs:
 
   deploy:
     name: Deploy the site
+    if: ${{ github.event != 'pull_request' }}
     needs: build
     runs-on: ubuntu-latest
     environment:
