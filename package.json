@@ -26,5 +26,8 @@
         "eslint-plugin-astro": "^0.26.2",
         "eslint-plugin-jsx-a11y": "^6.7.1",
         "eslint-plugin-tailwindcss": "^3.11.0"
+    },
+    "optionalDependencies": {
+        "surge": "^0.23.1"
     }
 }
