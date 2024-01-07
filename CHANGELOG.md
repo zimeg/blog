@@ -14,6 +14,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 - `chore` deps: schedule automatic update checks 2024-01-06
 - `ci` build: attempt to build the site on pulls 2024-01-06
 - `ci` deps: upload pages with latest versions 2024-01-06
+- `ci` style: examine code patterns on changes 2024-01-06
 - `fix` ci: skip deployments for pull requests 2024-01-06
 - `style` lint: run the linter on every repo file 2024-01-06
 - `blog` [five-day-week][five-day-week]: post published 2024-01-01

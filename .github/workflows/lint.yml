@@ -1,0 +1,25 @@
+name: Examine code patterns
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  lint:
+    name: Prove the package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the changes
+        uses: actions/checkout@v4
+      - name: Setup a runtime
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: ./package-lock.json
+      - name: Install dependencies
+        run: npm install
+      - name: Scan lintings
+        run: npm run lint
