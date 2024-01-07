@@ -7,7 +7,7 @@ export default defineConfig({
     markdown: {
         remarkRehype: {
             footnoteLabel: "footnotes and further reading",
-            footnoteBackLabel: "back to the content"
+            footnoteBackLabel: "back to the content",
         },
         shikiConfig: {
             theme: 'rose-pine-dawn',

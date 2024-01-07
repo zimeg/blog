@@ -1,5 +1,8 @@
 {
     "root": true,
+    "env": {
+        "node": true
+    },
     "extends": [
         "eslint:all",
         "eslint:recommended",
@@ -7,6 +10,7 @@
         "plugin:tailwindcss/recommended",
         "plugin:astro/recommended"
     ],
+    "ignorePatterns": ["node_modules"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "project": ["./tsconfig.json"]

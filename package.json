@@ -10,8 +10,8 @@
         "build": "astro build",
         "preview": "astro preview",
         "host": "astro preview --host",
-        "lint": "eslint --ext .astro,.cjs,.js,.mjs,.ts src",
-        "lint:fix": "eslint --ext .astro,.cjs,.js,.mjs,.ts src --fix"
+        "lint": "eslint --ext .astro,.cjs,.js,.mjs,.ts .",
+        "lint:fix": "eslint --ext .astro,.cjs,.js,.mjs,.ts . --fix"
     },
     "dependencies": {
         "@astrojs/mdx": "^2.0.2",
