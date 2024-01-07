@@ -12,6 +12,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 - `chore` deps: schedule automatic update checks 2024-01-06
 - `ci` build: attempt to build the site on pulls 2024-01-06
 - `ci` deps: upload pages with latest versions 2024-01-06
+- `fix` ci: skip deployments for pull requests 2024-01-06
 - `blog` [five-day-week][five-day-week]: post published 2024-01-01
 - `chore` [blog]: create a drafting directory 2024-01-01
 - `chore` license: include this new year with mit 2024-01-01
