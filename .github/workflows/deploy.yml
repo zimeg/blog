@@ -44,7 +44,9 @@ jobs:
         with:
           name: github-pages
       - name: Unpack the package
-        run: tar -xvf artifact.tar
+        run: |
+          mkdir -p dist
+          tar -xvf artifact.tar -C dist
       - name: Prepare surge
         run: npm install surge
       - name: Write to staging
