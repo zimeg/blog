@@ -55,6 +55,19 @@ jobs:
         run: npx surge ./dist o526-staging.surge.sh
         env:
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+      - name: Share a preview
+        run: |
+          PR_COMMENT="preview: $PREVIEW_URL"$'\n'"branch: $BRANCH_URL"
+          PR_REF="${{ github.ref_name }}"
+          if [[ $PR_REF == *"/merge" ]]; then
+            PR_REF="${PR_REF%%/merge}"
+          fi
+          if ! gh pr comment "$PR_REF" --edit-last --body "$PR_COMMENT"; then
+            gh pr comment "$PR_REF" --body "$PR_COMMENT"
+          fi
+        env:
+          PREVIEW_URL: https://o526-staging.surge.sh
+          BRANCH_URL: https://o526-staging.surge.sh/branch.txt
 
   deploy:
     name: Deploy the site
