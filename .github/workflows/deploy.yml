@@ -47,6 +47,8 @@ jobs:
         run: |
           mkdir -p dist
           tar -xvf artifact.tar -C dist
+      - name: Note the branch
+        run: echo ${{ github.ref_name }} > dist/branch.txt
       - name: Prepare surge
         run: npm install surge
       - name: Write to staging
