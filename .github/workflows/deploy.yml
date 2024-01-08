@@ -25,7 +25,7 @@ jobs:
           cache: npm
           cache-dependency-path: ./package-lock.json
       - name: Install dependencies
-        run: npm install
+        run: npm install --omit=dev
       - name: Package a distribution
         run: npm run build
       - name: Upload artifacts
@@ -33,9 +33,49 @@ jobs:
         with:
           path: ./dist/
 
+  preview:
+    name: Preview changes
+    if: ${{ github.ref != 'refs/heads/main' }}
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Download a distribution
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+      - name: Unpack the package
+        run: |
+          mkdir -p dist
+          tar -xvf artifact.tar -C dist
+      - name: Note the branch
+        run: echo ${{ github.ref_name }} > dist/branch.txt
+      - name: Prepare surge
+        run: npm install surge
+      - name: Write to staging
+        run: npx surge ./dist o526-staging.surge.sh
+        env:
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+      - name: Share a preview
+        run: |
+          PR_COMMENT="preview: $PREVIEW_URL"$'\n'"branch: $BRANCH_URL"
+          PR_REF="${{ github.ref_name }}"
+          if [[ $PR_REF == *"/merge" ]]; then
+            PR_REF="${PR_REF%%/merge}"
+          fi
+          if ! gh pr comment "$PR_REF" --repo "$GH_REPO" --edit-last --body "$PR_COMMENT"; then
+            gh pr comment "$PR_REF" --repo "$GH_REPO" --body "$PR_COMMENT"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          PREVIEW_URL: https://o526-staging.surge.sh
+          BRANCH_URL: https://o526-staging.surge.sh/branch.txt
+
   deploy:
     name: Deploy the site
-    if: ${{ github.event_name != 'pull_request' }}
+    if: ${{ github.ref == 'refs/heads/main' }}
     needs: build
     runs-on: ubuntu-latest
     environment:

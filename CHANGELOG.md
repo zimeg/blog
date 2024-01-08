@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `ci` build: preview changes for pull requests 2024-01-07
 - `build` deps: import shiki highlighting implict 2024-01-06
 - `build` deps: import tailwindcss styles implict 2024-01-06
 - `chore` deps: schedule automatic update checks 2024-01-06
