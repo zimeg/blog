@@ -1,5 +1,9 @@
+import MarkdownIt from "markdown-it";
 import { getCollection } from "astro:content";
 import rss from "@astrojs/rss";
+import sanitizeHtml from "sanitize-html";
+
+const parser = new MarkdownIt({ html: true });
 
 export async function GET(context) {
     const posts = await getCollection("posts");
@@ -11,7 +15,9 @@ export async function GET(context) {
             .map((post) => ({
                 title: post.data.title,
                 pubDate: post.data.posted,
-                content: post.body,
+                content: sanitizeHtml(parser.render(post.body), {
+                    allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
+                }),
                 link: `/blog/post/${post.slug}`,
             })),
     });
