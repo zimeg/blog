@@ -66,6 +66,7 @@ jobs:
             gh pr comment "$PR_REF" --body "$PR_COMMENT"
           fi
         env:
+          GH_TOKEN: ${{ github.token }}
           PREVIEW_URL: https://o526-staging.surge.sh
           BRANCH_URL: https://o526-staging.surge.sh/branch.txt
 
