@@ -11,6 +11,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 - `build` script: remove generated directories 2024-01-13
 - `feat` links: include unique page descriptions 2024-01-13
+- `notes` post: oops a cat ate the pigeons 2024-01-13
 - `chore` release: bump package version to today 2024-01-07
 - `ci` build: preview changes for pull requests 2024-01-07
 - `fix` rss: display content as rendered html 2024-01-07
@@ -44,6 +45,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 - `fix` deploy: downgrade pages for compatibility 2023-12-31
 - `me` [profile][profile]: interests added 2023-12-31
 - `me` [contact][contact]: email added 2023-12-31
+- `notes` post: don't feed the pigeons 2023-12-31
 - `notes` [rss][notes]: feed created 2023-12-31
 - `project` [emporia-time][emporia-time]: description added 2023-12-31
 - `project` [poly-plague][poly-plague]: description added 2023-12-31
