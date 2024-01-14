@@ -11,7 +11,8 @@
         "preview": "astro preview",
         "host": "astro preview --host",
         "lint": "eslint --ext .astro,.cjs,.js,.mjs,.ts .",
-        "lint:fix": "eslint --ext .astro,.cjs,.js,.mjs,.ts . --fix"
+        "lint:fix": "eslint --ext .astro,.cjs,.js,.mjs,.ts . --fix",
+        "clean": "rm -rf .astro dist node_modules"
     },
     "dependencies": {
         "@astrojs/mdx": "^2.0.3",

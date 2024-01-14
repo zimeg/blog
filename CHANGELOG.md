@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `build` script: remove generated directories 2024-01-13
 - `feat` links: include unique page descriptions 2024-01-13
 - `chore` release: bump package version to today 2024-01-07
 - `ci` build: preview changes for pull requests 2024-01-07
