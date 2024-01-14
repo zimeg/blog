@@ -1,6 +1,6 @@
 ---
 title: blog
-desc: the same site you're now browsing
+description: the same site you're now browsing
 repo: https://github.com/zimeg/blog
 order: 5
 ---

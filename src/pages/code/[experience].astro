@@ -13,8 +13,10 @@ export async function getStaticPaths() {
 
 const { experience } = Astro.props;
 const { Content } = await experience.render();
+const title = `code @ ${experience.data.organization}`;
+const description = `experiencing the ${experience.data.title} path`;
 ---
-<Layout title={`code @ ${experience.data.organization}`}>
+<Layout title={title} description={description}>
     <h1>{experience.data.title} @ {experience.data.organization}</h1>
     <Content />
 </Layout>

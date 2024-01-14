@@ -14,6 +14,7 @@ export async function GET(context) {
         items: posts.filter((post) => !post.data.hidden)
             .map((post) => ({
                 title: post.data.title,
+                description: post.data.description,
                 pubDate: post.data.posted,
                 content: sanitizeHtml(parser.render(post.body), {
                     allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),

@@ -4,8 +4,9 @@ import Header from "../layouts/Header.astro";
 
 export interface Props {
   title: string;
+  description: string;
 }
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +16,7 @@ const { title } = Astro.props;
         <link rel="icon" href="/favicon.png" />
         <meta name="generator" content={Astro.generator} />
         <meta name="author" content="zim" />
-        <meta name="description" content="random words and rambling musings to share" />
+        <meta name="description" content={description} />
         <title>{title}</title>
         <link rel="alternate" type="application/rss+xml" href="/posts.xml" title="posts of longer ramblings" />
         <link rel="alternate" type="application/rss+xml" href="/notes.xml" title="notes of momentary jots" />

@@ -1,6 +1,6 @@
 ---
 title: emporia-time
-desc: an energy aware time command
+description: an energy aware time command
 repo: https://github.com/zimeg/emporia-time
 order: 7
 ---

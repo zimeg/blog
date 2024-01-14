@@ -4,6 +4,7 @@ const about = defineCollection({
     type: 'content',
     schema: z.object({
         title: z.string(),
+        description: z.string(),
     }),
 });
 
@@ -20,6 +21,7 @@ const notes = defineCollection({
     type: 'content',
     schema: z.object({
         title: z.string(),
+        description: z.string(),
         posted: z.date(),
         draft: z.boolean().optional(),
     }),
@@ -29,6 +31,7 @@ const posts = defineCollection({
     type: 'content',
     schema: z.object({
         title: z.string(),
+        description: z.string(),
         posted: z.date(),
         hidden: z.boolean().optional(),
         draft: z.boolean().optional(),
@@ -40,7 +43,7 @@ const projects = defineCollection({
     schema: z.object({
         title: z.string(),
         heading: z.string().optional(),
-        desc: z.string(),
+        description: z.string(),
         order: z.number(),
         repo: z.string().url(),
     }),

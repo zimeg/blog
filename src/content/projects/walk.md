@@ -1,7 +1,7 @@
 ---
 title: walk
 heading: a random walk
-desc: a random walk with pen on paper
+description: a random walk with pen on paper
 repo: https://github.com/zimeg/walk
 order: 4
 ---

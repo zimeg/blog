@@ -1,6 +1,6 @@
 ---
 title: unblocked-reddit
-desc: proxying reddit content with google translate
+description: proxying reddit content with google translate
 repo: https://github.com/zimeg/unblocked-reddit
 order: 0
 ---

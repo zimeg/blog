@@ -1,6 +1,6 @@
 ---
 title: receipt-printer
-desc: a web api for a pos receipt printer
+description: a web api for a pos receipt printer
 repo: https://github.com/zimeg/receipt-printer
 order: 3
 ---

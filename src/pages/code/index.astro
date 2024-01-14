@@ -8,7 +8,7 @@ const projects = projectCollection.sort((p1, p2) => p2.data.order - p1.data.orde
 const experienceCollection = await getCollection("experiences");
 const experiences = experienceCollection.sort((e1, e2) => e2.data.order - e1.data.order);
 ---
-<Layout title="code">
+<Layout title="code" description="writings to the computer">
     <h1>writings to the computer</h1>
     <p>and other byte-sized blurbs.</p>
 
@@ -18,7 +18,7 @@ const experiences = experienceCollection.sort((e1, e2) => e2.data.order - e1.dat
         {projects.map((proj) => <li>
                 <a href={`/code/${proj.slug}`}>{proj.data.title}</a>
                 {' - '}
-                {proj.data.desc}
+                {proj.data.description}
             </li>)}
     </ul>
 

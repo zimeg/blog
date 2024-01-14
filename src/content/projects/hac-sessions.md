@@ -1,6 +1,6 @@
 ---
 title: hac-sessions
-desc: a browser extension to sustain gradebook sessions 
+description: a browser extension to sustain gradebook sessions
 repo: https://github.com/zimeg/hac-sessions
 order: 1
 ---

@@ -1,5 +1,6 @@
 ---
 title: gregarious days for gregorian
+description: common measurements for a calendar
 slug: five-day-week/gregorian
 hidden: true
 posted: 2024-01-01

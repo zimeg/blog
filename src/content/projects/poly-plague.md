@@ -1,6 +1,6 @@
 ---
 title: poly-plague
-desc: a coronavirus dashboard for cal poly
+description: a coronavirus dashboard for cal poly
 repo: https://github.com/zimeg/poly-plague
 order: 6 
 ---

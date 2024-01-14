@@ -1,5 +1,6 @@
 ---
 title: profiled points
+description: divulged particulars
 ---
 
 some details and descriptions of whoever is writing this.

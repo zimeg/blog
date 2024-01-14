@@ -1,5 +1,6 @@
 ---
 title: getting in touch
+description: contacted communications
 ---
 
 if you're reading this then we should probably talk.

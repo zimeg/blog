@@ -13,6 +13,7 @@ export async function GET(context) {
         site: context.site,
         items: notes.map((note) => ({
             title: `note #${note.slug}`,
+            description: note.data.description,
             pubDate: note.data.posted,
             content: sanitizeHtml(parser.render(note.body), {
                 allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
