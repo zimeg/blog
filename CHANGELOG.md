@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes` post: my computer fell and hit the ground 2024-02-02
 - `notes` template: save a description placeholder 2024-02-02
 - `chore` deps: group bumps to linter dependencies 2024-02-02
 - `build` node: install latest lts with flakes 2024-02-02
