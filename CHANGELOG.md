@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `build` node: install latest lts with flakes 2024-02-02
 - `build` script: remove generated directories 2024-01-13
 - `feat` links: include unique page descriptions 2024-01-13
 - `notes` post: oops a cat ate the pigeons 2024-01-13

@@ -7,6 +7,7 @@
 dist/
 
 # pile of dependencies
+.direnv/
 node_modules/
 
 # logs leftovers
