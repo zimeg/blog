@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `chore` deps: group bumps to linter dependencies 2024-02-02
 - `build` node: install latest lts with flakes 2024-02-02
 - `build` script: remove generated directories 2024-01-13
 - `feat` links: include unique page descriptions 2024-01-13

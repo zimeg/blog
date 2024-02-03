@@ -8,3 +8,9 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+    groups:
+      linter:
+        patterns:
+          - "@typescript-eslint/*"
+          - "eslint"
+          - "eslint-plugin-*"
