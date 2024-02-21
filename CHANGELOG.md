@@ -9,6 +9,9 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `travel` nyc: recent visit reflections revealed 2024-02-20
+- `travel` vancouver: curated coffee shop coziness 2024-02-20
+- `travel` sf: sketches of past skylines are shared 2024-02-20
 - `notes` post: my computer fell and hit the ground 2024-02-02
 - `notes` template: save a description placeholder 2024-02-02
 - `chore` deps: group bumps to linter dependencies 2024-02-02
