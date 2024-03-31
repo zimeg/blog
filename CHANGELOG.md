@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes` post: performing at instant band night 2024-03-30
 - `travel` nyc: recent visit reflections revealed 2024-02-20
 - `travel` vancouver: curated coffee shop coziness 2024-02-20
 - `travel` sf: sketches of past skylines are shared 2024-02-20
