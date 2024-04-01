@@ -18,7 +18,7 @@
         "@astrojs/mdx": "^2.1.1",
         "@astrojs/rss": "^4.0.5",
         "@astrojs/tailwind": "^5.1.0",
-        "astro": "^4.4.15",
+        "astro": "^4.5.12",
         "markdown-it": "^14.0.0",
         "sanitize-html": "^2.12.1"
     },
