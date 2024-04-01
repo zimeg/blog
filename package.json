@@ -15,7 +15,7 @@
         "clean": "rm -rf .astro dist node_modules"
     },
     "dependencies": {
-        "@astrojs/mdx": "^2.1.1",
+        "@astrojs/mdx": "^2.2.2",
         "@astrojs/rss": "^4.0.5",
         "@astrojs/tailwind": "^5.1.0",
         "astro": "^4.4.15",
