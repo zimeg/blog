@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `ci` build: revert packaging to use astro action 2024-04-03
 - `ci` deps: group package updates for all astros 2024-04-03
 - `notes` post: performing at instant band night 2024-03-30
 - `travel` nyc: recent visit reflections revealed 2024-02-20
