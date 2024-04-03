@@ -1,7 +1,7 @@
 {
     "name": "o526.net",
     "type": "module",
-    "version": "2024.01.13",
+    "version": "2024.04.03",
     "private": true,
     "license": "(MIT OR CC-BY-4.0)",
     "scripts": {
@@ -15,10 +15,10 @@
         "clean": "rm -rf .astro dist node_modules"
     },
     "dependencies": {
-        "@astrojs/mdx": "^2.1.1",
+        "@astrojs/mdx": "^2.2.3",
         "@astrojs/rss": "^4.0.5",
         "@astrojs/tailwind": "^5.1.0",
-        "astro": "^4.4.15",
+        "astro": "^4.5.14",
         "markdown-it": "^14.1.0",
         "sanitize-html": "^2.13.0"
     },
