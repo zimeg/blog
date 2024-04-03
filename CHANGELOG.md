@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes` fix: update image paths to the note page 2024-04-03
 - `ci` build: revert packaging to use astro action 2024-04-03
 - `ci` deps: group package updates for all astros 2024-04-03
 - `notes` post: performing at instant band night 2024-03-30
