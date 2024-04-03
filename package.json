@@ -19,7 +19,7 @@
         "@astrojs/rss": "^4.0.5",
         "@astrojs/tailwind": "^5.1.0",
         "astro": "^4.4.15",
-        "markdown-it": "^14.0.0",
+        "markdown-it": "^14.1.0",
         "sanitize-html": "^2.13.0"
     },
     "devDependencies": {
