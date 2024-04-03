@@ -9,6 +9,10 @@ updates:
     schedule:
       interval: "monthly"
     groups:
+      astro:
+        patterns:
+          - "@astrojs/*"
+          - "astro"
       linter:
         patterns:
           - "@typescript-eslint/*"
