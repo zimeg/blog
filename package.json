@@ -20,7 +20,7 @@
         "@astrojs/tailwind": "^5.1.0",
         "astro": "^4.4.15",
         "markdown-it": "^14.0.0",
-        "sanitize-html": "^2.12.1"
+        "sanitize-html": "^2.13.0"
     },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^7.1.0",
