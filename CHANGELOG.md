@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes` post: basketball is now my favorite sport 2024-04-14
 - `notes` fix: update image paths to the note page 2024-04-03
 - `ci` build: revert packaging to use astro action 2024-04-03
 - `ci` deps: group package updates for all astros 2024-04-03
