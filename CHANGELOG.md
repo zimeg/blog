@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes` build: store unfinished notes as drafts 2024-05-27
 - `notes` post: seeing through smudged glasses 2024-05-27
 - `notes` post: basketball is now my favorite sport 2024-04-14
 - `notes` fix: update image paths to the note page 2024-04-03
