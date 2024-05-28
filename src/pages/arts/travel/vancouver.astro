@@ -1,4 +1,5 @@
 ---
+import AstroDate from "../../../components/Date.astro";
 import Layout from "../../../layouts/Layout.astro";
 ---
 <Layout title="vancouver, bc" description="explorations north">
@@ -6,7 +7,10 @@ import Layout from "../../../layouts/Layout.astro";
     <p>49.281454, -123.110197</p>
 
     <h2>east van roasters</h2>
-    <p>drinking a coffee (2023-10-10)</p>
+    <p>
+        {'drinking a coffee - '}
+        <AstroDate posted={new Date('2023-10-10')} />
+    </p>
     <img
         src="/arts/travel/vancouver/coffee.jpeg"
         title="coziness is found"

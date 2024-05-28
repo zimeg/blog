@@ -1,4 +1,5 @@
 ---
+import AstroDate from "../../../components/Date.astro";
 import Layout from "../../../layouts/Layout.astro";
 ---
 <Layout title="san francisco, ca" description="a gilded rush">
@@ -6,7 +7,10 @@ import Layout from "../../../layouts/Layout.astro";
     <p>37.791426, -122.389567</p>
 
     <h2>studio</h2>
-    <p>the window (2022-11-05)</p>
+    <p>
+        {'the window - '}
+        <AstroDate posted={new Date('2022-11-05')} />
+    </p>
     <img
         src="/arts/travel/sf/studio.jpeg"
         title="life sitting by"

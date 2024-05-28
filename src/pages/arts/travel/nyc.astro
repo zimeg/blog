@@ -1,4 +1,5 @@
 ---
+import AstroDate from "../../../components/Date.astro";
 import Layout from "../../../layouts/Layout.astro";
 ---
 <Layout title="new york city, ny" description="business bustles">
@@ -6,7 +7,10 @@ import Layout from "../../../layouts/Layout.astro";
     <p>40.768738, -73.981802</p>
 
     <h2>broad nosh bagels</h2>
-    <p>late lunch and mocha (2024-02-15)</p>
+    <p>
+        {'late lunch and mocha - '}
+        <AstroDate posted={new Date('2024-02-15')} />
+    </p>
     <img
         src="/arts/travel/nyc/bagels.jpeg"
         title="winter winds chill my hand"
@@ -14,7 +18,10 @@ import Layout from "../../../layouts/Layout.astro";
     />
 
     <h2>the duplex</h2>
-    <p>drinks before a flight (2024-02-18)</p>
+    <p>
+        {'drinks before a flight - '}
+        <AstroDate posted={new Date('2024-02-18')} />
+    </p>
     <img
         src="/arts/travel/nyc/duplex.jpeg"
         title="kind strangers live so far away"
