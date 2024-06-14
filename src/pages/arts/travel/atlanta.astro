@@ -1,0 +1,20 @@
+---
+import AstroDate from "../../../components/Date.astro";
+import Layout from "../../../layouts/Layout.astro";
+---
+<Layout title="atlanta, ga" description="back in the south">
+    <h1>atlanta, ga</h1>
+    <p>33.75355, -84.39192</p>
+
+    <h2>peachtree hotel</h2>
+    <p>
+        {'found hospitality - '}
+        <AstroDate posted={new Date('2024-06-14')} />
+    </p>
+    <img
+        src="/arts/travel/atlanta/hotel.png"
+        title="heat zaps"
+        alt="staples such as the stadium and ferris wheel and theatre"
+        width="420"
+    />
+</Layout>

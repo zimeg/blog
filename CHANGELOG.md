@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `travel` atlanta: retreat from hospitable heat 2024-06-14
 - `me` [profile][profile]: update name spellings 2024-06-14
 - `travel` fix: toggle between calendar formats 2024-05-27
 - `notes` build: store unfinished notes as drafts 2024-05-27
@@ -73,12 +74,14 @@ tags follow [conventional commits][commits] but might reference a changed page.
 - `project` [unblocked-reddit][unblocked-reddit]: description added 2023-12-31
 
 <!-- a collection of links -->
+
 [calver]: https://calver.org
 [changelog]: https://keepachangelog.com/en/1.1.0/
 [commits]: https://www.conventionalcommits.org/en/v1.0.0/
 [rknight]: https://rknight.me/log/
 
 <!-- a collection of pages -->
+
 [807.band]: https://o526.net/code/807
 [blog]: https://o526.net/code/blog
 [calpoly]: https://o526.net/code/calpoly
@@ -99,4 +102,5 @@ tags follow [conventional commits][commits] but might reference a changed page.
 [walk]: https://o526.net/code/walk
 
 <!-- a collection of posts -->
+
 [five-day-week]: https://o526.net/blog/post/five-day-week
