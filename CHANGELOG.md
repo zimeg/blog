@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `me` [profile][profile]: update name spellings 2024-06-14
 - `travel` fix: toggle between calendar formats 2024-05-27
 - `notes` build: store unfinished notes as drafts 2024-05-27
 - `notes` post: seeing through smudged glasses 2024-05-27

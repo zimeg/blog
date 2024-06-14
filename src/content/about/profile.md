@@ -7,7 +7,7 @@ some details and descriptions of whoever is writing this.
 
 ## basics
 
-name: eden gardenz (formarly: "ethan zimbelman")<br>
+name: eden zimbelman<br>
 pronouns: any<br>
 cohort: zoomers<br>
 location: san francisco, ca
