@@ -1,11 +1,10 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 name: Examine code patterns
-
 on:
   pull_request:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
-
 jobs:
   lint:
     name: Prove the package

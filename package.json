@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "o526.net",
   "type": "module",
   "version": "2024.06.26",
