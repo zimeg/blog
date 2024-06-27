@@ -1,16 +1,16 @@
 ---
 const { href, blank, cursor } = Astro.props;
 let style = "font-mono text-sm underline hover:bg-amber-200";
-
 switch (cursor) {
-case "wait":
+  case "wait":
     style += " cursor-wait";
     break;
-case "menu":
+  case "menu":
     style += " cursor-context-menu";
     break;
-default:
+  default:
     break;
 }
 ---
+
 <a href={href} class={style} target={blank ? "_blank" : "_parent"}><slot /></a>

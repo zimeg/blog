@@ -8,24 +8,38 @@ export interface Props {
 }
 const { title, description } = Astro.props;
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="icon" href="/favicon.png" />
-        <meta name="generator" content={Astro.generator} />
-        <meta name="author" content="zim" />
-        <meta name="description" content={description} />
-        <title>{title}</title>
-        <link rel="alternate" type="application/rss+xml" href="/posts.xml" title="posts of longer ramblings" />
-        <link rel="alternate" type="application/rss+xml" href="/notes.xml" title="notes of momentary jots" />
-        <script defer data-domain="o526.net" src="https://plausible.io/js/script.js"></script>
-    </head>
-    <body>
-        <Header />
-        <main>
-            <slot />
-        </main>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="author" content="zim" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="/posts.xml"
+      title="posts of longer ramblings"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="/notes.xml"
+      title="notes of momentary jots"
+    />
+    <script
+      data-domain="o526.net"
+      is:inline
+      src="https://plausible.io/js/script.js"></script>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+  </body>
 </html>

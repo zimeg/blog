@@ -46,7 +46,7 @@ but being an api that can be accessed from the web, the
 
 ## understanding energy and power
 
-the original maintainer of this project had forgotten the difference between 
+the original maintainer of this project had forgotten the difference between
 measurements of energy and power.
 
 values for power were initially shown as energy in joules.
@@ -56,7 +56,6 @@ some reason.
 
 the maintainer is now humbly aware of this difference.
 
-<!-- a collection of links -->
 [endpoints]: https://github.com/magico13/PyEmVue/blob/master/api_docs.md#api-documentation
 [plug]: https://www.emporiaenergy.com/emporia-smart-plug
 [readme]: https://github.com/zimeg/emporia-time#program-information

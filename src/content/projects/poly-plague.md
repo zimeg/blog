@@ -2,7 +2,7 @@
 title: poly-plague
 description: a coronavirus dashboard for cal poly
 repo: https://github.com/zimeg/poly-plague
-order: 6 
+order: 6
 ---
 
 covid started halfway through my second year of college.
@@ -41,7 +41,7 @@ this was extremely stressful as [classes continued in-person][omicron].
 to cope with these stresses i made [another dashboard][dashboard] to display
 data in a chart that could be adjusted:
 
-![the same coronavirus testing statistics in a dashboard in a graph that can be adjusted](/code/poly-plague/dashboard.png "")
+![the same coronavirus testing statistics in a dashboard in a graph that can be adjusted](/code/poly-plague/dashboard.png "return from winter break")
 
 ## slow deterioration of software
 
@@ -62,7 +62,6 @@ this included all references to the data as far as i know.
 
 however the last updates to the data can still be accessed from the commits.
 
-<!-- a collection of links -->
 [campus]: https://mustangnews.net/cal-poly-releases-new-covid-19-testing-requirements/
 [commits]: https://github.com/zimeg/poly-plague/commits/main
 [dashboard]: https://poly-plague.vercel.app

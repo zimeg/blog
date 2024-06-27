@@ -43,7 +43,7 @@ my debugging skills improved.
 ### the advanced placement test
 
 as a junior i took the advanced placement class to prepare for the college
-board advanced placement test ^(tm). 
+board advanced placement test ^(tm).
 
 many object oriented concepts were covered but my teacher was more focused on
 motivating our learning so we continued to build games.

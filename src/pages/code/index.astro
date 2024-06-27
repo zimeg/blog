@@ -4,31 +4,44 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 
 const projectCollection = await getCollection("projects");
-const projects = projectCollection.sort((p1, p2) => p2.data.order - p1.data.order);
+const projects = projectCollection.sort(
+  (p1, p2) => p2.data.order - p1.data.order,
+);
 const experienceCollection = await getCollection("experiences");
-const experiences = experienceCollection.sort((e1, e2) => e2.data.order - e1.data.order);
+const experiences = experienceCollection.sort(
+  (e1, e2) => e2.data.order - e1.data.order,
+);
 ---
+
 <Layout title="code" description="writings to the computer">
-    <h1>writings to the computer</h1>
-    <p>and other byte-sized blurbs.</p>
+  <h1>writings to the computer</h1>
+  <p>and other byte-sized blurbs.</p>
 
-    <h2>some side projects</h2>
-    <p>writing code for fun is usually fun. or at least interesting.</p>
-    <ul>
-        {projects.map((proj) => <li>
-                <a href={`/code/${proj.slug}`}>{proj.data.title}</a>
-                {' - '}
-                {proj.data.description}
-            </li>)}
-    </ul>
+  <h2>some side projects</h2>
+  <p>writing code for fun is usually fun. or at least interesting.</p>
+  <ul>
+    {
+      projects.map((proj) => (
+        <li>
+          <a href={`/code/${proj.slug}`}>{proj.data.title}</a>
+          {" - "}
+          {proj.data.description}
+        </li>
+      ))
+    }
+  </ul>
 
-    <h2>experiences with code</h2>
-    <p>developing in structured settings brings so many learnings.</p>
-    <ul>
-        {experiences.map((exp) => <li>
-                <a href={`/code/${exp.slug}`}>{exp.data.title}</a>
-                {' @ '}
-                {exp.data.organization}
-            </li>)}
-    </ul>
+  <h2>experiences with code</h2>
+  <p>developing in structured settings brings so many learnings.</p>
+  <ul>
+    {
+      experiences.map((exp) => (
+        <li>
+          <a href={`/code/${exp.slug}`}>{exp.data.title}</a>
+          {" @ "}
+          {exp.data.organization}
+        </li>
+      ))
+    }
+  </ul>
 </Layout>

@@ -81,7 +81,6 @@ i am sorry for this violation and hope you can forgive me @google.
 
 ![the chrome store removal notice](/code/hac-sessions/removal.png "a regretful removal")
 
-<!-- a collection of links -->
 [graded]: https://geooot.com/graded/
 [moodle]: https://moodle.com
 [stackoverflow]: https://stackoverflow.com/a/9696633

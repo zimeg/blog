@@ -8,25 +8,31 @@ import Link from "../../../components/Link.astro";
 
 const notes = await getCollection("notes");
 ---
+
 <Layout title="notes" description="momentary thoughts">
-    <h1>momentary thoughts</h1>
-    <p>and quicker jots. all in the linear fashion of life.</p>
-    <p>
-        <Link href="/notes.xml">follow the rss</Link>.
-        <Link href="https://twitter.com/_egzim" blank cursor="wait">{
-            'read on twitter'
-        }</Link>.
-    </p>
-    <ul>
-        {notes.filter((note) => !note.data.draft)
-            .sort((n0, n1) => {
-                const d0 = new Date(n0.data.posted);
-                const d1 = new Date(n1.data.posted);
-                return d1.getTime() - d0.getTime();
-            })
-            .map((note) => <li>
-                <a href={`/blog/note/${note.slug}`}>{note.data.title}</a>
-                <AstroDate posted={note.data.posted} />
-            </li>)}
-    </ul>
+  <h1>momentary thoughts</h1>
+  <p>and quicker jots. all in the linear fashion of life.</p>
+  <p>
+    <Link href="/notes.xml">follow the rss</Link>.
+    <Link href="https://twitter.com/_egzim" blank cursor="wait"
+      >{"read on twitter"}</Link
+    >.
+  </p>
+  <ul>
+    {
+      notes
+        .filter((note) => !note.data.draft)
+        .sort((n0, n1) => {
+          const d0 = new Date(n0.data.posted);
+          const d1 = new Date(n1.data.posted);
+          return d1.getTime() - d0.getTime();
+        })
+        .map((note) => (
+          <li>
+            <a href={`/blog/note/${note.slug}`}>{note.data.title}</a>
+            <AstroDate posted={note.data.posted} />
+          </li>
+        ))
+    }
+  </ul>
 </Layout>

@@ -8,26 +8,32 @@ import Link from "../../../components/Link.astro";
 
 const posts = await getCollection("posts");
 ---
+
 <Layout title="posts" description="longer ramblings">
-    <h1>longer ramblings</h1>
-    <p>some odd ideas. written with hints of formality.</p>
-    <p>
-        <Link href="/posts.xml">follow the rss</Link>.
-        <Link href="mailto:zim@o526.net?subject=subscribe&body=please%20add%20me%20to%20the%20mailing%20list!"
-            cursor="menu">{
-            'join the mailing list'
-        }</Link>.
-    </p>
-    <ul>
-        {posts.filter((post) => !post.data.draft && !post.data.hidden)
-            .sort((p0, p1) => {
-                const d0 = new Date(p0.data.posted);
-                const d1 = new Date(p1.data.posted);
-                return d1.getTime() - d0.getTime();
-            })
-            .map((post) => <li>
-                <a href={`/blog/post/${post.slug}`}>{post.data.title}</a>
-                <AstroDate posted={post.data.posted} />
-            </li>)}
-    </ul>
+  <h1>longer ramblings</h1>
+  <p>some odd ideas. written with hints of formality.</p>
+  <p>
+    <Link href="/posts.xml">follow the rss</Link>.
+    <Link
+      href="mailto:zim@o526.net?subject=subscribe&body=please%20add%20me%20to%20the%20mailing%20list!"
+      cursor="menu">{"join the mailing list"}</Link
+    >.
+  </p>
+  <ul>
+    {
+      posts
+        .filter((post) => !post.data.draft && !post.data.hidden)
+        .sort((p0, p1) => {
+          const d0 = new Date(p0.data.posted);
+          const d1 = new Date(p1.data.posted);
+          return d1.getTime() - d0.getTime();
+        })
+        .map((post) => (
+          <li>
+            <a href={`/blog/post/${post.slug}`}>{post.data.title}</a>
+            <AstroDate posted={post.data.posted} />
+          </li>
+        ))
+    }
+  </ul>
 </Layout>

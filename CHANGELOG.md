@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `style` lint: switch eslint for prettier astro 2024-06-26
 - `notes` post: cutting hair in the mirror cutting hair 2024-06-25
 - `travel` atlanta: retreat from hospitable heat 2024-06-14
 - `me` [profile][profile]: update name spellings 2024-06-14

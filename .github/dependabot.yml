@@ -15,6 +15,5 @@ updates:
           - "astro"
       linter:
         patterns:
-          - "@typescript-eslint/*"
-          - "eslint"
-          - "eslint-plugin-*"
+          - "prettier"
+          - "prettier-plugin-astro"
