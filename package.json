@@ -1,34 +1,30 @@
 {
-    "name": "o526.net",
-    "type": "module",
-    "version": "2024.05.27",
-    "private": true,
-    "license": "(MIT OR CC-BY-4.0)",
-    "scripts": {
-        "dev": "astro dev",
-        "local": "astro dev --host",
-        "build": "astro build",
-        "preview": "astro preview",
-        "host": "astro preview --host",
-        "lint": "eslint --ext .astro,.cjs,.js,.mjs,.ts .",
-        "lint:fix": "eslint --ext .astro,.cjs,.js,.mjs,.ts . --fix",
-        "clean": "rm -rf .astro dist node_modules"
-    },
-    "dependencies": {
-        "@astrojs/mdx": "^2.3.1",
-        "@astrojs/rss": "^4.0.5",
-        "@astrojs/tailwind": "^5.1.0",
-        "astro": "^4.7.0",
-        "markdown-it": "^14.1.0",
-        "sanitize-html": "^2.13.0"
-    },
-    "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^7.5.0",
-        "@typescript-eslint/parser": "^7.5.0",
-        "eslint": "^8.57.0",
-        "eslint-plugin-astro": "^0.33.1",
-        "eslint-plugin-jsx-a11y": "^6.7.1",
-        "eslint-plugin-tailwindcss": "^3.15.1",
-        "surge": "^0.23.1"
-    }
+  "name": "o526.net",
+  "type": "module",
+  "version": "2024.06.26",
+  "private": true,
+  "license": "(MIT OR CC-BY-4.0)",
+  "scripts": {
+    "dev": "astro dev",
+    "local": "astro dev --host",
+    "build": "astro build",
+    "preview": "astro preview",
+    "host": "astro preview --host",
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --check . --write",
+    "clean": "rm -rf .astro dist node_modules"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^2.3.1",
+    "@astrojs/rss": "^4.0.5",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.7.0",
+    "markdown-it": "^14.1.0",
+    "sanitize-html": "^2.13.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2",
+    "prettier-plugin-astro": "^0.14.0",
+    "surge": "^0.23.1"
+  }
 }

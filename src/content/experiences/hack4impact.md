@@ -243,7 +243,6 @@ possible.
 
 ![the hack4impact logo with a horse emoji](/code/hack4impact/logo.png "made with <3")
 
-<!-- a collection of links -->
 [bootcamp]: https://www.youtube.com/playlist?list=PLGL7XOUlsk3fJ7z431M6Okiw0iuQC0MaD
 [casa]: https://calpoly.hack4impact.org/projects/casa-slo
 [cp]: https://calpoly.hack4impact.org

@@ -30,7 +30,7 @@ ocassional messages are sent via email so [join the mailing list][mail] too!
 
 ## notes from the maintainer
 
-thanks for reading! below are a few notes that are somewhat relevant. 
+thanks for reading! below are a few notes that are somewhat relevant.
 
 ### collaborations
 
@@ -55,7 +55,6 @@ visits.
 
 no data is shared and nothing sold.
 
-<!-- a collection of links -->
 [blog]: ../blog
 [changelog]: ../CHANGELOG.md
 [contact]: ../me/contact

@@ -97,7 +97,7 @@ with professor fang. a course better known as "privacy policy".
 moral desires for private personal affairs were defined and debated as
 corporations and advancing technology encroached on these.
 
-ongoing regulation and otherwise distributed technologies bring hope. 
+ongoing regulation and otherwise distributed technologies bring hope.
 but i have nothing to hide anyways.
 
 #### csc 348: discrete structures
@@ -552,7 +552,6 @@ at the end of my fourth year i returned to play at the rodeo.
 
 ![a celebratory pose with a trumpet at the rodeo](/code/calpoly/rodeo.jpeg "yeehaw")
 
-<!-- a collection of links -->
 [807]: ./807
 [hack4impact]: ./hack4impact
 [poll]: https://twitter.com/_egzim/status/994016866875133952

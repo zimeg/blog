@@ -146,6 +146,5 @@ energy and [a handful of minigames][connect4] were made.
 
 ![staring off into the sunset in minecraft](/code/minecraft/sunset.png "another day ends")
 
-<!-- a collection of links -->
 [connect4]: https://www.planetminecraft.com/project/connect-4-1823763/
 [hamachi]: https://vpn.net

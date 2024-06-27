@@ -109,5 +109,4 @@ discover this guide: https://sdt.builtbyslack.com
 
 ![sitting in front of the slack office](/code/slack/office.jpg "so glad to be here")
 
-<!-- a collection of links -->
 [developers]: https://www.youtube.com/watch?v=Vhh_GeBPOhs

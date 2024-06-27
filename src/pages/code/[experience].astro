@@ -4,11 +4,15 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-    const experiences = await getCollection("experiences");
-    return experiences.map((experience) => ({
-        params: { experience: experience.slug },
-        props: { experience },
-    }));
+  const experiences = await getCollection("experiences");
+  return experiences.map((experience) => ({
+    params: {
+      experience: experience.slug,
+    },
+    props: {
+      experience,
+    },
+  }));
 }
 
 const { experience } = Astro.props;
@@ -16,7 +20,8 @@ const { Content } = await experience.render();
 const title = `code @ ${experience.data.organization}`;
 const description = `experiencing the ${experience.data.title} path`;
 ---
+
 <Layout title={title} description={description}>
-    <h1>{experience.data.title} @ {experience.data.organization}</h1>
-    <Content />
+  <h1>{experience.data.title} @ {experience.data.organization}</h1>
+  <Content />
 </Layout>
