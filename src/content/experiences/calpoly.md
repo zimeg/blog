@@ -552,8 +552,8 @@ at the end of my fourth year i returned to play at the rodeo.
 
 ![a celebratory pose with a trumpet at the rodeo](/code/calpoly/rodeo.jpeg "yeehaw")
 
-[807]: ./807
-[hack4impact]: ./hack4impact
+[807]: /code/807
+[hack4impact]: /code/hack4impact
 [poll]: https://twitter.com/_egzim/status/994016866875133952
 [semesters]: https://mustangnews.net/cal-poly-plans-switch-to-semesters/
 [senior_project]: https://csc-nonprofits.notion.site/Lecture-topics-05f97ba7293c4d1ea248a696b30fbd0e

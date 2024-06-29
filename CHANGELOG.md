@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `fix`: replace broken links with the fixed link 2024-06-29
 - `style` lint: use yaml and nix language servers 2024-06-26
 - `style` lint: switch eslint for prettier astro 2024-06-26
 - `notes` post: cutting hair in the mirror cutting hair 2024-06-25

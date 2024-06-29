@@ -234,7 +234,7 @@ be in this moment.
 
 [chinese]: https://en.wikipedia.org/wiki/Chinese_calendar#Horology
 [cotsworth]: https://en.wikipedia.org/wiki/International_Fixed_Calendar
-[deciyear]: https://deciyear.com
+[deciyear]: https://web.archive.org/web/20231220193602/https://deciyear.com/
 [ethiopian]: https://www.ethcalendar.com
 [egyptian]: https://en.wikipedia.org/wiki/Egyptian_calendar#Civil_calendar
 [french]: https://en.wikipedia.org/wiki/French_Republican_calendar#Ten_days_of_the_week

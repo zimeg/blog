@@ -55,9 +55,9 @@ visits.
 
 no data is shared and nothing sold.
 
-[blog]: ../blog
-[changelog]: ../CHANGELOG.md
-[contact]: ../me/contact
+[blog]: /blog
+[changelog]: /CHANGELOG.md
+[contact]: /me/contact
 [mail]: mailto:zim@o526.net?subject=subscribe&body=please%20add%20me%20to%20the%20mailing%20list!
 [patch]: https://github.com/zimeg/blog/pulls
 [plausible]: https://plausible.io
