@@ -95,7 +95,7 @@ matching days between adjusted calendars can be quickly done with this chart.
 
 please note that this references the 2024 gregorian calendar.
 
-| day | gregorian |     | fiveday |     |
+| day | gregorian |     | quintus |     |
 | --: | --------: | --: | ------: | --: |
 |   1 |    1 jan. | (m) |  1 jan. | (a) |
 |   2 |    2 jan. | (t) |  2 jan. | (b) |

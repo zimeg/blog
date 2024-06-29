@@ -17,6 +17,8 @@ days each.
 
 days can be called: onesday, twosday, threesday, foursday, fivesday.
 
+for calendar called: quintus.
+
 each month then has six equal weeks. this neglects about five or six days which
 trail as a standalone "nil" week.
 
