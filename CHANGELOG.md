@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `blog` [five-day-week][five-day-week]: split sections into subpages 2024-06-29
 - `fix`: replace broken links with the fixed link 2024-06-29
 - `style` lint: use yaml and nix language servers 2024-06-26
 - `style` lint: switch eslint for prettier astro 2024-06-26
