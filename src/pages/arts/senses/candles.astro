@@ -1,0 +1,18 @@
+---
+import AstroDate from "../../../components/Date.astro";
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="candles" description="small light">
+  <h1>candles</h1>
+  <p>
+    {"burnout - "}
+    <AstroDate posted={new Date("2023-07-17")} />
+  </p>
+  <img
+    src="/arts/senses/candles/candles.jpeg"
+    title="a wax flame"
+    alt="two candles with a small dull glow"
+    width="420"
+  />
+</Layout>

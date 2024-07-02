@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `arts` [senses][senses]: capture felt observation 2024-07-02
 - `blog` [five-day-week][five-day-week]: reference a quintus calendar 2024-06-29
 - `blog` [five-day-week][five-day-week]: split sections into subpages 2024-06-29
 - `fix`: replace broken links with the fixed link 2024-06-29
@@ -103,6 +104,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 [poly-plague]: https://o526.net/code/poly-plague
 [profile]: https://o526.net/me/profile
 [receipt-printer]: https://o526.net/code/receipt-printer
+[senses]: https://o526.net/arts/senses
 [slack]: https://o526.net/code/slack
 [unblocked-reddit]: https://o526.net/code/unblocked-reddit
 [walk]: https://o526.net/code/walk
