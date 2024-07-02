@@ -1,0 +1,18 @@
+---
+import AstroDate from "../../../components/Date.astro";
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="tattoos" description="lasting forever">
+  <h1>tattoos</h1>
+  <p>
+    {"sterile - "}
+    <AstroDate posted={new Date("2024-07-01")} />
+  </p>
+  <img
+    src="/arts/senses/tattoos/tattoos.jpeg"
+    title="poked"
+    alt="ink dripping onto a covered needle between the lines of a note card"
+    width="1024"
+  />
+</Layout>
