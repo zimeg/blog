@@ -1,0 +1,19 @@
+---
+import AstroDate from "../../../components/Date.astro";
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="denver, co" description="high for miles">
+  <h1>denver, co</h1>
+  <p>39.798239, -105.077358</p>
+  <h2>olde town arvada station</h2>
+  <p>
+    {"different backgrounds - "}
+    <AstroDate posted={new Date("2024-07-20")} />
+  </p>
+  <img
+    src="/arts/travel/denver/mountains.jpeg"
+    title="mountains for mom"
+    alt="light rail and a theatre with a water tower in front of mountains"
+  />
+</Layout>

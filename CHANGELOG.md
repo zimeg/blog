@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `travel` denver: visiting mountains with mother 2024-07-20
 - `arts` tattoos: sticking on pokes causes spill 2024-07-02
 - `arts` [senses][senses]: capture felt observation 2024-07-02
 - `blog` [five-day-week][five-day-week]: reference a quintus calendar 2024-06-29
