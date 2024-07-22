@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/package.json",
   "name": "o526.net",
   "type": "module",
-  "version": "2024.07.20",
+  "version": "2024.07.22",
   "private": true,
   "license": "(MIT OR CC-BY-4.0)",
   "scripts": {

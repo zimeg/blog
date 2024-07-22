@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `me` [profile][profile]: remove limits on bike stations 2024-07-22
 - `travel` denver: visiting mountains with mother 2024-07-20
 - `arts` tattoos: sticking on pokes causes spill 2024-07-02
 - `arts` [senses][senses]: capture felt observation 2024-07-02

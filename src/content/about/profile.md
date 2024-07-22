@@ -20,8 +20,6 @@ beyond topics typically shared i enjoy the following.
 
 i want to ride my bicycle wherever i like. it's a fun way to get around.
 
-bay wheels offer so many options and i hope to visit every station.
-
 ### coffee
 
 a day with coffee is a good day. coincidently i have coffee most days.
