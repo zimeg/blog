@@ -1,0 +1,141 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import AstroDate from "../../../components/Date.astro";
+
+export const title = "the graffiti is gone and going more";
+export const description = "click to purchase more paint";
+export const posted = new Date("2024-07-27");
+
+const styles = {
+  h1: "cursor-pointer underline",
+  hidden: "hidden",
+  img: "absolute top-0 left-0 w-[512px]",
+  p: "cursor-pointer underline hover:bg-amber-50",
+};
+---
+
+<Layout title={title} description={description}>
+  <h1 id="title" class={styles.h1} title={description}>{title}</h1>
+  <p>
+    {"> "}
+    <AstroDate posted={posted} />
+  </p>
+  <p class={styles.p} id="fence.p">
+    the fence surrounding a hole in the ground filled with rain the past few
+    months was painted black and white.
+  </p>
+  <p class={styles.p} id="notice_of_violation.p">
+    a notice is taped in blue to state a violation of the "public works code"
+    and "article 23" is cited.
+  </p>
+  <p class={styles.p} id="building.p">
+    across the street towards the end the place next to the parking lot still
+    had painted words across the windows.
+  </p>
+  <p class={styles.p} id="article.23.p">some of it was gone when i got home.</p>
+  <p class={styles.p} id="garage.p">
+    the parking lot next door still had painted walls.
+  </p>
+  <p class={styles.p} id="door.p">
+    behind the busted entrance to the building that i live i looked through the
+    door.
+  </p>
+  <div class="relative pb-[576px]">
+    <img
+      alt="a boarded up glass building with blurred markings across the windows"
+      class={styles.hidden}
+      id="building.img"
+      src="/blog/note/6a5c902d/building.jpeg"
+    />
+    <img
+      alt="a small painted garage behind fences of a paid private parking lot"
+      class={styles.hidden}
+      id="garage.img"
+      src="/blog/note/6a5c902d/garage.webp"
+    />
+    <img
+      alt="a busted opaque glass door with the handle blocking access and broom"
+      class={styles.hidden}
+      id="door.img"
+      src="/blog/note/6a5c902d/door.webp"
+    />
+    <img
+      alt="a notice of violating article 23 against the black fence with words"
+      class={styles.hidden}
+      id="article.23.img"
+      src="/blog/note/6a5c902d/article.23.png"
+    />
+    <img
+      alt="the top of an an uneven wooden fence painted black with small gaps"
+      class={styles.img}
+      id="fence.img"
+      src="/blog/note/6a5c902d/fence.png"
+    />
+    <img
+      alt="words on the notice of article 23 violations have profane language"
+      class={styles.hidden}
+      id="notice_of_violation.img"
+      src="/blog/note/6a5c902d/notice_of_violation.png"
+    />
+  </div>
+</Layout>
+
+<script>
+  document.getElementById("title").addEventListener("click", () => {
+    alert("i am out of paint. check back soon.");
+  });
+  /**
+   * @param active boolean - if the current image is shown
+   * @param removes string[]? - images that are removed when this one is removed
+   * @param replaces string[]? - images to replace when adding this image
+   * @param requires string[]? - images that must be active to show this one
+   */
+  const images = {
+    "article.23": {
+      active: false,
+    },
+    building: {
+      active: false,
+      replaces: ["door", "garage"],
+      requires: ["fence"],
+    },
+    door: {
+      active: false,
+      replaces: ["building"],
+      requires: ["garage"],
+    },
+    fence: {
+      active: true,
+      removes: ["building", "notice_of_violation"],
+    },
+    garage: {
+      active: false,
+      removes: ["door"],
+      replaces: ["building"],
+    },
+    notice_of_violation: {
+      active: false,
+    },
+  };
+  function hideImage(id) {
+    images[id].active = false;
+    document.getElementById(`${id}.img`).className = "hidden";
+  }
+  function showImage(id) {
+    images[id].active = true;
+    document.getElementById(`${id}.img`).className =
+      "absolute top-0 left-0 w-[512px]";
+  }
+  Object.keys(images).forEach((id) => {
+    const image = images[id];
+    document.getElementById(`${id}.p`).addEventListener("click", () => {
+      if (image.active) {
+        hideImage(id);
+        image.removes?.forEach(hideImage);
+      } else if (!image.requires?.find((rid) => !images[rid].active)) {
+        showImage(id);
+        image.replaces?.forEach(hideImage);
+      }
+    });
+  });
+</script>
