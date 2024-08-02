@@ -2,11 +2,12 @@
 interface Props {
   posted: Date;
 }
+const format = "cursor-pointer text-nowrap";
 const { posted } = Astro.props;
 ---
 
 <astro-date data-posted={posted}>
-  <time datetime={posted.toISOString()} class="cursor-pointer">{posted}</time>
+  <time datetime={posted.toISOString()} class={format}>{posted}</time>
 </astro-date>
 
 <script>
