@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes` post: smoke scars for a tempered crown 2024-08-01
 - `build` mdx: include mdx in the astro configuration 2024-08-01
 - `notes` post: the graffiti is gone and going more 2024-07-27
 - `me` [profile][profile]: remove limits on bike stations 2024-07-22
