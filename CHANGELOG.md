@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes` post: crashing with speed and weak brake 2024-08-11
 - `fix` css: avoid wrapping the date on small screens 2024-08-01
 - `notes` post: smoke scars for a tempered crown 2024-08-01
 - `build` mdx: include mdx in the astro configuration 2024-08-01
