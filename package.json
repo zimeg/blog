@@ -26,6 +26,6 @@
   "devDependencies": {
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
-    "surge": "^0.23.1"
+    "surge": "^0.24.6"
   }
 }
