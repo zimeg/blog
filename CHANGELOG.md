@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes` post: metronomic tap to a backspace 2024-09-30
 - `notes` fix: correct crash evidence apsect ratio 2024-08-11
 - `notes` post: crashing with speed and weak brake 2024-08-11
 - `fix` css: avoid wrapping the date on small screens 2024-08-01

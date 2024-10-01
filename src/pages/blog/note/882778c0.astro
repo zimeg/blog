@@ -1,0 +1,60 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import AstroDate from "../../../components/Date.astro";
+
+export const title = "metronomic tap to a backspace";
+export const description = "this message hurt to write";
+export const posted = new Date("2024-09-30");
+---
+
+<Layout title={title} description={description}>
+  <h1 title={description}>{title}</h1>
+  <p>
+    {"> "}
+    <AstroDate posted={posted} />
+  </p>
+  <p>
+    the muscle in each finger feels worn and the knuckles somewhat stiff.
+    written four weeks ago on a <span id="thing">computer</span>.
+  </p>
+  <p>
+    <strong>click</strong>
+  </p>
+  <p>
+    <strong>tap</strong>
+    <strong>tap</strong>
+  </p>
+  <p>
+    if that's the sound it makes. i write fast but not when words change. it'll
+    make sense after some more tries.
+  </p>
+  <p>
+    <strong>ding</strong>
+  </p>
+  <p>can it not stop?</p>
+  <p>
+    <strong>click</strong>
+    <strong>click</strong>
+    <strong>click</strong>
+  </p>
+  <p>nevermind.</p>
+  <p>
+    <strong>tap</strong>
+  </p>
+  <p>tap.</p>
+  <img
+    src="/blog/note/882778c0/hands.png"
+    alt="childhood hands dated in concrete"
+    title="words are hard"
+    width="512"
+  />
+</Layout>
+
+<script>
+  const now = new Date();
+  if (now.getSeconds() % 2) {
+    document.getElementById("thing").innerText = "computer";
+  } else {
+    document.getElementById("thing").innerText = "guitar";
+  }
+</script>
