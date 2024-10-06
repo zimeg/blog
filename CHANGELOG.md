@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `travel` san juan: meditate on a relaxing beach 2024-10-06
 - `fix`: bump the version of xml parser to prevent redos 2024-10-06
 - `notes` post: metronomic tap to a backspace 2024-09-30
 - `notes` fix: correct crash evidence apsect ratio 2024-08-11

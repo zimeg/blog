@@ -1,0 +1,21 @@
+---
+import AstroDate from "../../../components/Date.astro";
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="san juan, pr" description="a relaxed change">
+  <h1>san juan, pr</h1>
+  <p>18.443764, -66.022191</p>
+
+  <h2>beach</h2>
+  <p>
+    {"lifeguard - "}
+    <AstroDate posted={new Date("2024-10-06")} />
+  </p>
+  <img
+    src="/arts/travel/san-juan/beach.png"
+    title="shared waves"
+    alt="umbrellas line the beach as bbq happens"
+    width="600"
+  />
+</Layout>
