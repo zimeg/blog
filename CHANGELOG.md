@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `fix`: bump the version of xml parser to prevent redos 2024-10-06
 - `notes` post: metronomic tap to a backspace 2024-09-30
 - `notes` fix: correct crash evidence apsect ratio 2024-08-11
 - `notes` post: crashing with speed and weak brake 2024-08-11
