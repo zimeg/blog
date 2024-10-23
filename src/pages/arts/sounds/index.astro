@@ -1,0 +1,89 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="sound" description="vibrations are heard">
+  <h1>sounds</h1>
+  <p>i really enjoy music. both listening and playing.</p>
+  <h2>set</h2>
+  <figure class="mt-2 mb-4">
+    <figcaption>
+      now playing:
+      <span id="song">sonny</span>
+    </figcaption>
+    <audio id="source" controls src="https://cdn.o526.net/sonny.mp3"></audio>
+  </figure>
+  <ul>
+    <li>
+      <a
+        title="2023-07-24"
+        class="streams"
+        href="https://cdn.o526.net/sonny.mp3">sonny</a
+      > - eden gardenz
+    </li>
+    <li>
+      <a
+        title="2023-01-23"
+        class="streams"
+        href="https://cdn.o526.net/potted-plant.mp3">plotted plant</a
+      > - eden gardenz
+    </li>
+    <li>
+      <a
+        title="2023-01-23"
+        class="streams"
+        href="https://cdn.o526.net/maide-2b.mp3">maide 2B</a
+      > - eden gardenz
+    </li>
+    <li>
+      <a
+        title="2022-09-17"
+        target="_blank"
+        href="https://soundcloud.com/zimboboys/her-majesty">her majesty</a
+      > - ez
+    </li>
+    <li>
+      <a
+        title="2021-05-25"
+        target="_blank"
+        href="https://open.spotify.com/album/2vPEP0VfnaBbSNug77iiqy?si=0o8aD697Q_uAUIauR8Xn3A"
+        >save the apes</a
+      > - ethan schlocker
+    </li>
+    <li>
+      <a
+        title="2021-04-23"
+        target="_blank"
+        href="https://mo-bopapo.bandcamp.com/track/no-racquetball"
+        >no racquetball</a
+      > - mo bopapo
+    </li>
+    <li>
+      <a
+        title="2021-04-10"
+        target="_blank"
+        href="https://soundcloud.com/zimboboys/facecam-off">facecam off</a
+      > - ez
+    </li>
+    <li>
+      <a
+        title="2020-03-26"
+        target="_blank"
+        href="https://soundcloud.com/zimboboys/dont-talk-trumpet-demo"
+        >don't talk trumpet - demo</a
+      > - ez
+    </li>
+  </ul>
+</Layout>
+
+<script>
+  document.addEventListener("click", (event) => {
+    const anchor = event.target.closest("a.streams");
+    const isCtrlOrCmdPressed = event.ctrlKey || event.metaKey;
+    if (anchor && !isCtrlOrCmdPressed) {
+      event.preventDefault();
+    }
+    document.getElementById("song").innerText = anchor.innerText;
+    document.getElementById("source").src = anchor.href;
+  });
+</script>
