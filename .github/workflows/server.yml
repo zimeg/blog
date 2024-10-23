@@ -10,9 +10,6 @@ jobs:
   construct:
     name: Setup servers
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: servers
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v4
