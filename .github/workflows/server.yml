@@ -10,6 +10,9 @@ jobs:
   construct:
     name: Setup servers
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: servers
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v4
@@ -24,25 +27,18 @@ jobs:
       - name: Restore or save caches
         uses: DeterminateSystems/magic-nix-cache-action@v8
       - name: Outline known infrustructure
-        run: |
-          cd servers
-          nix run .#tofu -- init
+        run: nix run .#tofu -- init
       - name: Ensure infrastructure reason
         run: |
-          cd servers
           nix run .#tofu -- fmt -check
           nix run .#tofu -- validate
       - name: Plan the infrastructure changes
         if: github.event_name == 'pull_request'
-        run: |
-          cd servers
-          nix run .#tofu -- plan
+        run: nix run .#tofu -- plan
         env:
           TF_VAR_hosted_zone_id: ${{ secrets.AWS_HOSTED_ZONE_ID }}
       - name: Push to production
         if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
-        run: |
-          cd servers
-          nix run .#tofu -- apply -auto-approve
+        run: nix run .#tofu -- apply -auto-approve
         env:
           TF_VAR_hosted_zone_id: ${{ secrets.AWS_HOSTED_ZONE_ID }}
