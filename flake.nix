@@ -17,10 +17,8 @@
             pkgs.nodejs_20
           ];
         };
-        devShells.tofu = pkgs.mkShell {
-          buildInputs = [
-            pkgs.opentofu
-          ];
-        };
+        packages.tofu = pkgs.writeShellScriptBin "tofu" ''
+          ${pkgs.opentofu}/bin/tofu $@
+        '';
       });
 }
