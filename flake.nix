@@ -12,10 +12,13 @@
         };
       in
       {
-        devShell = pkgs.mkShell {
+        devShells.default = pkgs.mkShell {
           buildInputs = [
             pkgs.nodejs_20
           ];
         };
+        packages.tofu = pkgs.writeShellScriptBin "tofu" ''
+          ${pkgs.opentofu}/bin/tofu $@
+        '';
       });
 }

@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `cdn`: setup a content network to serve large files 2024-10-22
 - `notes` post: the cat grew wings and few into a tree 2024-10-17
 - `travel` nyc: stop between boroughs in return home 2024-10-13
 - `travel` san juan: meditate on a relaxing beach 2024-10-06

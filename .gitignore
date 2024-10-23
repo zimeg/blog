@@ -6,6 +6,9 @@
 # build outputs
 dist/
 
+# infrastructure setup
+.terraform
+
 # pile of dependencies
 .direnv/
 node_modules/
