@@ -21,7 +21,7 @@
     "@astrojs/tailwind": "^5.1.1",
     "astro": "^4.15.11",
     "markdown-it": "^14.1.0",
-    "sanitize-html": "^2.13.0"
+    "sanitize-html": "^2.13.1"
   },
   "devDependencies": {
     "prettier": "^3.3.3",
