@@ -1,0 +1,21 @@
+---
+import AstroDate from "../../../components/Date.astro";
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="san luis obispo, ca" description="with more relaxed vibes">
+  <h1>san luis obispo, ca</h1>
+  <p>35.311956, -120.654139</p>
+
+  <h2>ridges</h2>
+  <p>
+    {"tried tips - "}
+    <AstroDate posted={new Date("2024-11-05")} />
+  </p>
+  <img
+    src="/arts/travel/slo/ridges.png"
+    title="hiking in darkness is not allowed"
+    alt="two ridges and trees without leafs"
+    width="420"
+  />
+</Layout>
