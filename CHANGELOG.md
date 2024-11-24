@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes` post: audience to a familiar experience 2024-11-24
 - `travel` slo: take a train down to the central coast 2024-11-05
 - `video` tank: and show a recording from that event 2024-10-22
 - `music` sailedon: release song of underwater piano 2024-10-22
