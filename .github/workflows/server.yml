@@ -23,7 +23,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: Install a flaked Nix
-        uses: DeterminateSystems/nix-installer-action@v14
+        uses: DeterminateSystems/nix-installer-action@v16
       - name: Restore or save caches
         uses: DeterminateSystems/magic-nix-cache-action@v8
       - name: Outline known infrustructure
