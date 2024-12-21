@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes` post: sacrosanct numerologies aligned 2024-12-21
 - `build`: bump astro dependencies to the latest 2024-12-08
 - `notes` post: audience to a familiar experience 2024-11-24
 - `travel` slo: take a train down to the central coast 2024-11-05
