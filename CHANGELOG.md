@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `music` fix: remove a letter from plotted song 2024-12-26
 - `notes` fix: include an image of some numerics 2024-12-21
 - `notes` post: sacrosanct numerologies aligned 2024-12-21
 - `build`: bump astro dependencies to the latest 2024-12-08
