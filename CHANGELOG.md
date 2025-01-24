@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes` post: missed mailing passport in transit 2025-01-23
 - `music` fix: remove a letter from plotted song 2024-12-26
 - `notes` fix: include an image of some numerics 2024-12-21
 - `notes` post: sacrosanct numerologies aligned 2024-12-21

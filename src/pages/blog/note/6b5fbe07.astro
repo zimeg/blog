@@ -1,0 +1,43 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import AstroDate from "../../../components/Date.astro";
+
+export const title = "missed mailing passport in transit";
+export const description = "x-";
+export const posted = new Date("2025-01-23");
+
+const styles = {
+  img: "hover:cursor-pointer w-[512px]",
+};
+---
+
+<Layout title={title} description={description}>
+  <h1 title={description}>{title}</h1>
+  <p>
+    {"> "}
+    <AstroDate posted={posted} />
+  </p>
+  <p>id picture a small booklet across statelines too late.</p>
+  <p>tsk tsak.</p>
+  <img
+    alt="the passport ornament tied to flowers dried with receipts of application overlaid"
+    class={styles.img}
+    id="travel?!"
+    title="hoping a return"
+    src="/blog/note/6b5fbe07/passedoff.png"
+  />
+</Layout>
+
+<script>
+  document.getElementById("travel?!").addEventListener("click", (e) => {
+    const target = e.ctrlKey || e.metaKey ? "_blank" : "_self";
+    const url = e.shiftKey
+      ? "https://cdn.o526.net/9505510143375021226199.png"
+      : "https://tools.usps.com/go/TrackConfirmAction?qtc_tLabels1=9505510143375021226199";
+    if (target !== "_self") {
+      window.open(url, target).focus();
+    } else {
+      window.open(url, target);
+    }
+  });
+</script>
