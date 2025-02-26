@@ -1,0 +1,27 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import AstroDate from "../../../components/Date.astro";
+
+export const title = "rough paper house books paint write";
+export const description = "sufaced line width more with moor wite";
+export const posted = new Date("2025-02-25");
+
+const styles = {
+  img: "cursor-wait w-[512px]",
+};
+---
+
+<Layout title={title} description={description}>
+  <h1 title={description}>{title}</h1>
+  <p>
+    {"> "}
+    <AstroDate posted={posted} />
+  </p>
+  <p>i pushed haredd but a different sheet'll maust mouch differince.</p>
+  <img
+    alt="sheded serpant stretched thin"
+    class={styles.img}
+    title="blats pland in convert"
+    src="/blog/note/f08df0e4/sanke.png"
+  />
+</Layout>

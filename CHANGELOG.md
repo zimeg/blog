@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes` post: rough paper house books paint write 2025-02-25
 - `video` clamp: beheldend for strong metal grasp 2025-01-30
 - `notes` post: missed mailing passport in transit 2025-01-23
 - `music` fix: remove a letter from plotted song 2024-12-26
