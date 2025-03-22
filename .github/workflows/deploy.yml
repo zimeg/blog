@@ -5,14 +5,12 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-permissions:
-  contents: read
-  pages: write
-  id-token: write
 jobs:
   build:
     name: Build the blog
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout the changes
         uses: actions/checkout@v4
@@ -67,6 +65,10 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
+      id-token: write
+      pages: write
     steps:
       - name: Write to pages
         id: deployment
