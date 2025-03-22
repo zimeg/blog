@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `build`: use tailwind vite plugin in astro config 2025-03-21
 - `fix`: css: surround a single quoted css variable 2025-03-11
 - `notes` post: rough paper house books paint write 2025-02-25
 - `video` clamp: beheldend for strong metal grasp 2025-01-30

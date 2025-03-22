@@ -1,10 +1,10 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   site: "https://o526.net",
-  integrations: [tailwind(), mdx()],
+  integrations: [mdx()],
   markdown: {
     remarkRehype: {
       footnoteLabel: "footnotes and further reading",
@@ -13,5 +13,8 @@ export default defineConfig({
     shikiConfig: {
       theme: "rose-pine-dawn",
     },
+  },
+  vite: {
+    plugins: [tailwindcss()],
   },
 });
