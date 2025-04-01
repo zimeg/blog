@@ -18,7 +18,7 @@
   "dependencies": {
     "@astrojs/mdx": "^4.2.1",
     "@astrojs/rss": "^4.0.11",
-    "@tailwindcss/vite": "^4.0.15",
+    "@tailwindcss/vite": "^4.0.17",
     "astro": "^5.5.4",
     "markdown-it": "^14.1.0",
     "sanitize-html": "^2.15.0",
