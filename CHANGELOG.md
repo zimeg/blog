@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes` post: hour changed sun times more light 2025-03-31
 - `arts` [music][music]: bandcamp added 2025-03-22
 - `ci` chore: set permissions for individual jobs 2025-03-21
 - `build`: use tailwind vite plugin in astro config 2025-03-21
