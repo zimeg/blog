@@ -15,7 +15,7 @@ jobs:
       - name: Checkout the changes
         uses: actions/checkout@v4
       - name: Package a distribution
-        uses: withastro/action@v3
+        uses: withastro/action@v4
         with:
           node-version: 20
   preview:
