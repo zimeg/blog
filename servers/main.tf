@@ -13,7 +13,7 @@ terraform {
     dynamodb_table = "architectf-timeline"
   }
 
-  required_version = "1.6.1"
+  required_version = "1.9.0"
 }
 
 provider "aws" {

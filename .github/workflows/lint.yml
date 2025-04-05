@@ -3,7 +3,8 @@ name: Examine code patterns
 on:
   pull_request:
   push:
-    branches: [main]
+    branches:
+      - main
   workflow_dispatch:
 jobs:
   lint:
@@ -17,7 +18,7 @@ jobs:
       - name: Setup a runtime
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
           cache-dependency-path: ./package-lock.json
       - name: Install dependencies
