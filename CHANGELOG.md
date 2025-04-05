@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `ci` chore: automerge stable package bumps 2025-04-04
 - `ci` chore: set workflow schedule for license 2025-04-04
 - `build` deps: group updates to tailwind css 2025-04-04
 - `chore` deps: update the flake and node version 2025-04-04
