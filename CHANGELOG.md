@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `build` deps: group updates to tailwind css 2025-04-04
 - `chore` deps: update the flake and node version 2025-04-04
 - `notes` post: hour changed sun times more light 2025-03-31
 - `arts` [music][music]: bandcamp added 2025-03-22

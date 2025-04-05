@@ -18,3 +18,7 @@ updates:
         patterns:
           - "prettier"
           - "prettier-plugin-astro"
+      tailwind:
+        patterns:
+          - "tailwindcss"
+          - "@tailwindcss/vite"
