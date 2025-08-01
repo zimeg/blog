@@ -1,0 +1,27 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import AstroDate from "../../../components/Date.astro";
+
+export const title = "tips win reolution in pari dansemore";
+export const description =
+  "curing vite busied jords untelling and the moon o lunamoon signed bright";
+export const posted = new Date("2025-07-31");
+
+const styles = {
+  marquee: "font-mono whitespace-pre",
+};
+---
+
+<Layout title={title} description={description}>
+  <h1 id="title" title={description}>{title}</h1>
+  <p>
+    {"> "}
+    <AstroDate posted={posted} />
+  </p>
+  <p>a trophied celebration. the wek ends move.</p>
+  <marquee class={styles.marquee} direction="right">
+    ox*x*-0
+    <br />
+    ..
+  </marquee>
+</Layout>

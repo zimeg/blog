@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes` post: tips win reolution in pari dansemore 2025-07-31
 - `ci` build: use recommended practices for actions 2025-07-31
 - `notes` post: cirvate to umblin ins in inn portunce 2025-06-30
 - `ci` build: remove the now deprecated nix cache 2025-05-21
