@@ -14,9 +14,11 @@ jobs:
       contents: read
     steps:
       - name: Checkout the changes
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
       - name: Package a distribution
-        uses: withastro/action@v4
+        uses: withastro/action@063f85a3c9fc861a0a5e5a956225d9031177eff9 # v4.0.0
         with:
           node-version: 22
   preview:
@@ -28,7 +30,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Download a distribution
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
           name: github-pages
       - name: Unpack the package
@@ -36,7 +38,9 @@ jobs:
           mkdir -p dist
           tar -xvf artifact.tar -C dist
       - name: Note the branch
-        run: echo ${{ github.ref_name }} > dist/branch.txt
+        run: echo "$REF_NAME" > dist/branch.txt
+        env:
+          REF_NAME: ${{ github.ref_name }}
       - name: Prepare surge
         run: npm install surge
       - name: Write to staging
@@ -46,7 +50,6 @@ jobs:
       - name: Share a preview
         run: |
           PR_COMMENT="preview: $PREVIEW_URL"$'\n'"branch: $BRANCH_URL"
-          PR_REF="${{ github.ref_name }}"
           if [[ $PR_REF == *"/merge" ]]; then
             PR_REF="${PR_REF%%/merge}"
           fi
@@ -57,6 +60,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
           PREVIEW_URL: https://o526-staging.surge.sh
+          PR_REF: ${{ github.ref_name }}
           BRANCH_URL: https://o526-staging.surge.sh/branch.txt
   deploy:
     name: Deploy the site
@@ -73,4 +77,4 @@ jobs:
     steps:
       - name: Write to pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5

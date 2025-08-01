@@ -5,7 +5,7 @@ on:
 jobs:
   dependabot:
     name: Merge automatic pull requests
-    if: github.actor == 'dependabot[bot]'
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -13,25 +13,25 @@ jobs:
     steps:
       - name: Collect update metadata
         id: metadata
-        uses: dependabot/fetch-metadata@v2.4.0
+        uses: dependabot/fetch-metadata@08eff52bf64351f401fb50d4972fa95b9f2c2d1b # v2.4.0
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
       - name: Wait for tests to pass
-        uses: lewagon/wait-on-check-action@v1.4.0
+        uses: lewagon/wait-on-check-action@0dceb95e7c4cad8cc7422aee3885998f5cab9c79 # v1.4.0
         with:
           check-regexp: Prove the package
           ref: ${{ github.event.pull_request.head.sha }}
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           wait-interval: 10
       - name: Wait for builds to succeed
-        uses: lewagon/wait-on-check-action@v1.4.0
+        uses: lewagon/wait-on-check-action@0dceb95e7c4cad8cc7422aee3885998f5cab9c79 # v1.4.0
         with:
           check-regexp: Build the blog
           ref: ${{ github.event.pull_request.head.sha }}
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           wait-interval: 10
       - name: Wait for servers to setup
-        uses: lewagon/wait-on-check-action@v1.4.0
+        uses: lewagon/wait-on-check-action@0dceb95e7c4cad8cc7422aee3885998f5cab9c79 # v1.4.0
         with:
           check-regexp: Setup servers
           ref: ${{ github.event.pull_request.head.sha }}
