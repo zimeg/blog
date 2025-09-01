@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: Handwriting;
+  font-display: swap;
+  src: url("https://cdn.o526.net/handwriting.woff2") format("woff2");
+}
+
 @theme {
   --cursor-wait: url(/blog/note/f08df0e4/brick.png) 6 12, wait;
+  --font-handwriting: Handwriting, sans-serif;
+  --font-sans: sans-serif;
 }
 
 @layer base {

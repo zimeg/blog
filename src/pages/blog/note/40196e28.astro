@@ -1,0 +1,27 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import AstroDate from "../../../components/Date.astro";
+
+export const title = "squid fear poisend clear line escape";
+export const description =
+  "pen pen pen pen pen pen pen pen pen pen pen pen pen pen pen";
+export const posted = new Date("2025-08-31");
+
+const styles = {
+  p: "font-(family-name:--font-handwriting) text-2xl",
+  textarea: "font-(family-name:--font-handwriting) text-2xl border resize-none",
+};
+---
+
+<Layout title={title} description={description}>
+  <h1 title={description}>{title}</h1>
+  <p>
+    {"> "}
+    <AstroDate posted={posted} />
+  </p>
+  <p class={styles.p}>the quick brown fox jumped over a lazy dog.</p>
+  <textarea class={styles.textarea} cols="40">
+    {"  fox!"}
+    {" doooog "}</textarea
+  >
+</Layout>
