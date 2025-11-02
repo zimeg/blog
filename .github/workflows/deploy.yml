@@ -18,7 +18,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Package a distribution
-        uses: withastro/action@063f85a3c9fc861a0a5e5a956225d9031177eff9 # v4.0.0
+        uses: withastro/action@2226b5671ff302b175d9843add614af27e60bbfc # v5.0.0
         with:
           node-version: 22
   preview:
