@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import AstroDate from "../../../components/Date.astro";
+
+export const title = "horror lives within streams reflection";
+export const description = "familiar costumes are worn still";
+export const posted = new Date("2025-11-01");
+
+const styles = {
+  video: "transform -scale-x-100",
+};
+---
+
+<Layout title={title} description={description}>
+  <h1 title={description}>{title}</h1>
+  <p>
+    {"> "}
+    <AstroDate posted={posted} />
+  </p>
+  <p>or err sought:</p>
+  <video id="camera" autoplay playsinline class={styles.video}></video>
+  <script>
+    (async () => {
+      const stream = await navigator.mediaDevices.getUserMedia({
+        video: true,
+      });
+      document.getElementById("camera").srcObject = stream;
+    })();
+  </script>
+</Layout>

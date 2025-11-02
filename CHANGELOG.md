@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes`: post: horror lives within streams reflection 2025-11-01
 - `notes`: post: time calendar no sell at the moment 2025-09-30
 - `notes`: post: squid fear poisend clear line escape 2025-08-31
 - `notes` post: tips win reolution in pari dansemore 2025-07-31
