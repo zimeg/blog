@@ -24,30 +24,16 @@ const { posted } = Astro.props;
       const time = this.querySelector("time")!;
       time.title = "a date, in ISO 8601 format";
       time.innerText = this.dateIntoISO(posted);
-      time.addEventListener("click", () => {
+      time.addEventListener("click", async () => {
         isoFormat = !isoFormat;
         if (isoFormat) {
           time.title = "a date, in ISO 8601 format";
           time.innerText = this.dateIntoISO(posted);
         } else {
           time.title = "a date, formatted to five day weeks";
-          time.innerText = this.dateIntoFives(posted);
+          time.innerText = await this.dateIntoFives(posted);
         }
       });
-    }
-
-    /**
-     * daysIntoYear returns the number of days since the start of the year
-     * @see https://stackoverflow.com/a/40975730
-     */
-    daysIntoYear(posted: Date): number {
-      const utc = Date.UTC(
-        posted.getUTCFullYear(),
-        posted.getUTCMonth(),
-        posted.getUTCDate(),
-      );
-      const start = Date.UTC(posted.getUTCFullYear(), 0, 0);
-      return (utc - start) / 24 / 60 / 60 / 1000;
     }
 
     /**
@@ -63,14 +49,11 @@ const { posted } = Astro.props;
     /**
      * dateIntoFives represents a Date object in five day weeks
      */
-    dateIntoFives(posted: Date): string {
-      const year = posted.getUTCFullYear();
-      const days = this.daysIntoYear(posted);
-      const month = Math.ceil(days / 30)
-        .toString()
-        .padStart(2, "0");
-      const day = (((days - 1) % 30) + 1).toString().padStart(2, "0");
-      return year + "-" + month + "-" + day;
+    async dateIntoFives(posted: Date): Promise<string> {
+      const iso = this.dateIntoISO(posted);
+      const response = await fetch(`https://quintus.sh/date/${iso}`);
+      const date = await response.text();
+      return date;
     }
   }
 
