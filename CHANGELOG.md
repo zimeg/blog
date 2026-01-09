@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `video` firework: lightning and thunder in the air 2026-01-01
 - `build`: replace original quintus pattern with api 2025-12-02
 - `chore`: audit package updates and fix linting error 2025-11-01
 - `notes`: post: horror lives within streams reflection 2025-11-01
