@@ -23,7 +23,7 @@ jobs:
         run: |
           git config --global user.email "tom@deorr.co"
           git config --global user.name "@theorderingmachine"
-      - name: Note the branch
+      - name: Publish the branch
         run: |
           echo "$REF_NAME" > public/branch.txt
           git add public
@@ -45,9 +45,9 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
-          PREVIEW_URL: https://o526-staging.surge.sh
+          PREVIEW_URL: https://dev.o526.net
           PR_REF: ${{ github.ref_name }}
-          BRANCH_URL: https://o526-staging.surge.sh/branch.txt
+          BRANCH_URL: https://dev.o526.net/branch.txt
   deploy:
     name: Deploy the site
     if: ${{ github.ref == 'refs/heads/main' }}
