@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `build`: start a server from ephemeral nix builds 2026-02-02
 - `build`: host the website with the ordering machine 2026-01-25
 - `video` firework: lightning and thunder in the air 2026-01-01
 - `build`: replace original quintus pattern with api 2025-12-02

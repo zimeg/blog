@@ -9,7 +9,7 @@ on:
 jobs:
   construct:
     name: Setup servers
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     defaults:
       run:
         working-directory: servers
@@ -26,21 +26,19 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
-      - name: Install a flaked Nix
-        uses: DeterminateSystems/nix-installer-action@c5a866b6ab867e88becbed4467b93592bce69f8a # v21
       - name: Outline known infrustructure
-        run: nix run .#tofu -- init
+        run: nix develop --command tofu init
       - name: Ensure infrastructure reason
         run: |
-          nix run .#tofu -- fmt -check
-          nix run .#tofu -- validate
+          nix develop --command tofu fmt -check
+          nix develop --command tofu validate
       - name: Plan the infrastructure changes
         if: github.event_name == 'pull_request'
-        run: nix run .#tofu -- plan
+        run: nix develop --command tofu plan
         env:
           TF_VAR_hosted_zone_id: ${{ secrets.AWS_HOSTED_ZONE_ID }}
       - name: Push to production
         if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
-        run: nix run .#tofu -- apply -auto-approve
+        run: nix develop --command tofu apply -auto-approve
         env:
           TF_VAR_hosted_zone_id: ${{ secrets.AWS_HOSTED_ZONE_ID }}
