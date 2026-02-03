@@ -19,27 +19,31 @@
       devShells = each (pkgs: {
         default = pkgs.mkShell {
           buildInputs = [
-            pkgs.nodejs_22
+            pkgs.nodejs_22 # https://github.com/nodejs/node
+            pkgs.opentofu # https://github.com/opentofu/opentofu
           ];
         };
       });
       apps = each (pkgs: {
         default = {
           type = "app";
-          program = "${pkgs.writeShellScript "blog" ''
-            WORKDIR=$(mktemp -d)
-            cp -r ${self}/. "$WORKDIR"
-            cd "$WORKDIR"
-            ${pkgs.nodejs_22}/bin/npm ci --omit=dev
-            ${pkgs.nodejs_22}/bin/npm run build
-            exec ${pkgs.nodejs_22}/bin/npm run host -- "$@"
-          ''}";
+          program = "${pkgs.writeShellApplication {
+            name = "blog";
+            runtimeInputs = [
+              pkgs.bash # https://cgit.git.savannah.gnu.org/cgit/bash.git
+              pkgs.coreutils # https://github.com/coreutils/coreutils
+              pkgs.nodejs_22 # https://github.com/nodejs/node
+            ];
+            text = ''
+              WORKDIR=$(mktemp -d)
+              cp -r ${self}/. "$WORKDIR"
+              cd "$WORKDIR"
+              npm ci --omit=dev
+              npm run build
+              exec npm run host -- "$@"
+            '';
+          }}/bin/blog";
         };
-      });
-      packages = each (pkgs: {
-        tofu = pkgs.writeShellScriptBin "tofu" ''
-          ${pkgs.opentofu}/bin/tofu $@
-        '';
       });
     };
 }
