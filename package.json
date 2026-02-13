@@ -20,7 +20,7 @@
     "@astrojs/rss": "^4.0.14",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.6",
-    "markdown-it": "^14.1.0",
+    "markdown-it": "^14.1.1",
     "sanitize-html": "^2.17.0",
     "tailwindcss": "^4.0.15"
   },
