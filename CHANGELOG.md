@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes`: post: simple is good complex is bad often 2026-02-22
 - `build`: start a server from ephemeral nix builds 2026-02-02
 - `build`: host the website with the ordering machine 2026-01-25
 - `video` firework: lightning and thunder in the air 2026-01-01
