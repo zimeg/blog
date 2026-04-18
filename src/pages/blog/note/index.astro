@@ -29,7 +29,7 @@ const notes = await getCollection("notes");
         })
         .map((note) => (
           <li>
-            <a href={`/blog/note/${note.slug}`}>{note.data.title}</a>
+            <a href={`/blog/note/${note.id}`}>{note.data.title}</a>
             <AstroDate posted={note.data.posted} />
           </li>
         ))

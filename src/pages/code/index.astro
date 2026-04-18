@@ -23,7 +23,7 @@ const experiences = experienceCollection.sort(
     {
       projects.map((proj) => (
         <li>
-          <a href={`/code/${proj.slug}`}>{proj.data.title}</a>
+          <a href={`/code/${proj.id}`}>{proj.data.title}</a>
           {" - "}
           {proj.data.description}
         </li>
@@ -37,7 +37,7 @@ const experiences = experienceCollection.sort(
     {
       experiences.map((exp) => (
         <li>
-          <a href={`/code/${exp.slug}`}>{exp.data.title}</a>
+          <a href={`/code/${exp.id}`}>{exp.data.title}</a>
           {" @ "}
           {exp.data.organization}
         </li>

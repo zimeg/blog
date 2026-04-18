@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 
 import Layout from "../../../layouts/Layout.astro";
 
@@ -8,16 +8,16 @@ import AstroDate from "../../../components/Date.astro";
 export async function getStaticPaths() {
   const notes = await getCollection("notes");
   return notes.map((note) => ({
-    params: { id: note.slug },
+    params: { id: note.id },
     props: { note },
   }));
 }
 
 const { note } = Astro.props;
-const { Content } = await note.render();
+const { Content } = await render(note);
 ---
 
-<Layout title={note.slug} description={note.data.description}>
+<Layout title={note.id} description={note.data.description}>
   <h1>{note.data.title}</h1>
   <p>
     {"> "}
