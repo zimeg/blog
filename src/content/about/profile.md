@@ -8,7 +8,7 @@ some details and descriptions of whoever is writing this.
 ## basics
 
 name: eden zimbelman<br>
-pronouns: any<br>
+pronouns: she<br>
 cohort: zoomers<br>
 location: san francisco, ca
 

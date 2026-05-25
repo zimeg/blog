@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `me` [profile][profile]: update pronouns detail 2026-05-24
 - `notes`: post: magic paints cover splatter on walls 2026-04-26
 - `notes`: post: simple is good complex is bad often 2026-02-22
 - `build`: start a server from ephemeral nix builds 2026-02-02
