@@ -19,6 +19,7 @@
       devShells = each (pkgs: {
         default = pkgs.mkShell {
           buildInputs = [
+            pkgs.awscli2 # https://github.com/aws/aws-cli
             pkgs.nodejs_22 # https://github.com/nodejs/node
             pkgs.opentofu # https://github.com/opentofu/opentofu
           ];

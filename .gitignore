@@ -3,6 +3,9 @@
 *.bak
 *.swp
 
+# big files
+cdn/
+
 # build outputs
 dist/
 

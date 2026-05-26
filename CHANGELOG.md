@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `arts`: upload song and video of sentence ladter 2026-05-25
 - `me` [profile][profile]: update pronouns detail 2026-05-24
 - `notes`: post: magic paints cover splatter on walls 2026-04-26
 - `notes`: post: simple is good complex is bad often 2026-02-22
