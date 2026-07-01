@@ -21,7 +21,7 @@
     "@tailwindcss/vite": "^4.3.0",
     "astro": "^6.4.8",
     "markdown-it": "^14.2.0",
-    "sanitize-html": "^2.17.4",
+    "sanitize-html": "^2.17.5",
     "tailwindcss": "^4.0.15"
   },
   "devDependencies": {
