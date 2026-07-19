@@ -13,7 +13,7 @@ const posts = await getCollection("posts");
   <h1>longer ramblings</h1>
   <p>some odd ideas. written with hints of formality.</p>
   <p>
-    <Link href="/posts.xml">follow the rss</Link>.
+    <Link href="/posts.xml">follow the rss</Link>.{" "}
     <Link
       href="mailto:zim@o526.net?subject=subscribe&body=please%20add%20me%20to%20the%20mailing%20list!"
       cursor="menu">{"join the mailing list"}</Link
@@ -30,7 +30,7 @@ const posts = await getCollection("posts");
         })
         .map((post) => (
           <li>
-            <a href={`/blog/post/${post.id}`}>{post.data.title}</a>
+            <a href={`/blog/post/${post.id}`}>{post.data.title}</a>{" "}
             <AstroDate posted={post.data.posted} />
           </li>
         ))
