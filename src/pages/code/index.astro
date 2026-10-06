@@ -20,28 +20,24 @@ const experiences = experienceCollection.sort(
   <h2>some side projects</h2>
   <p>writing code for fun is usually fun. or at least interesting.</p>
   <ul>
-    {
-      projects.map((proj) => (
-        <li>
-          <a href={`/code/${proj.id}`}>{proj.data.title}</a>
-          {" - "}
-          {proj.data.description}
-        </li>
-      ))
-    }
+    {projects.map((proj) => (
+      <li>
+        <a href={`/code/${proj.id}`}>{proj.data.title}</a>
+        {" - "}
+        {proj.data.description}
+      </li>
+    ))}
   </ul>
 
   <h2>experiences with code</h2>
   <p>developing in structured settings brings so many learnings.</p>
   <ul>
-    {
-      experiences.map((exp) => (
-        <li>
-          <a href={`/code/${exp.id}`}>{exp.data.title}</a>
-          {" @ "}
-          {exp.data.organization}
-        </li>
-      ))
-    }
+    {experiences.map((exp) => (
+      <li>
+        <a href={`/code/${exp.id}`}>{exp.data.title}</a>
+        {" @ "}
+        {exp.data.organization}
+      </li>
+    ))}
   </ul>
 </Layout>

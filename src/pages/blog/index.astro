@@ -21,21 +21,19 @@ const posts = await getCollection("posts");
     <Link href="/blog/note">continued notes</Link>.
   </p>
   <ul>
-    {
-      notes
-        .filter((note) => !note.data.draft)
-        .sort((p0, p1) => {
-          const d0 = new Date(p0.data.posted);
-          const d1 = new Date(p1.data.posted);
-          return d1.getTime() - d0.getTime();
-        })
-        .map((note) => (
-          <li>
-            <a href={`/blog/note/${note.id}`}>{note.data.title}</a>{" "}
-            <AstroDate posted={note.data.posted} />
-          </li>
-        ))
-    }
+    {notes
+      .filter((note) => !note.data.draft)
+      .sort((p0, p1) => {
+        const d0 = new Date(p0.data.posted);
+        const d1 = new Date(p1.data.posted);
+        return d1.getTime() - d0.getTime();
+      })
+      .map((note) => (
+        <li>
+          <a href={`/blog/note/${note.id}`}>{note.data.title}</a>{" "}
+          <AstroDate posted={note.data.posted} />
+        </li>
+      ))}
   </ul>
 
   <h2>longer ramblings</h2>
@@ -45,20 +43,18 @@ const posts = await getCollection("posts");
     <Link href="/blog/post">completed posts</Link>.
   </p>
   <ul>
-    {
-      posts
-        .filter((post) => !post.data.draft && !post.data.hidden)
-        .sort((p0, p1) => {
-          const d0 = new Date(p0.data.posted);
-          const d1 = new Date(p1.data.posted);
-          return d1.getTime() - d0.getTime();
-        })
-        .map((post) => (
-          <li>
-            <a href={`/blog/post/${post.id}`}>{post.data.title}</a>{" "}
-            <AstroDate posted={post.data.posted} />
-          </li>
-        ))
-    }
+    {posts
+      .filter((post) => !post.data.draft && !post.data.hidden)
+      .sort((p0, p1) => {
+        const d0 = new Date(p0.data.posted);
+        const d1 = new Date(p1.data.posted);
+        return d1.getTime() - d0.getTime();
+      })
+      .map((post) => (
+        <li>
+          <a href={`/blog/post/${post.id}`}>{post.data.title}</a>{" "}
+          <AstroDate posted={post.data.posted} />
+        </li>
+      ))}
   </ul>
 </Layout>
