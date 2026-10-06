@@ -39,27 +39,25 @@ const style = isCurrentCollection(href)
   : "font-mono underline hover:bg-amber-200";
 ---
 
-{
-  breadcrumb ? (
-    breadcrumb.split("/").map((bread, piece) => (
-      <a
-        href={createLink(piece)}
-        class={style}
-        target={blank ? "_blank" : "_parent"}
-      >
-        {piece === breadcrumb.split("/").length - 1 ? (
-          <span class="bg-amber-200 hover:bg-amber-300">{bread}</span>
-        ) : (
-          <>
-            <span class="">{bread}</span>
-            <span class="">/</span>
-          </>
-        )}
-      </a>
-    ))
-  ) : (
-    <Link href={href}>
-      <slot />
-    </Link>
-  )
-}
+{breadcrumb ? (
+  breadcrumb.split("/").map((bread, piece) => (
+    <a
+      href={createLink(piece)}
+      class={style}
+      target={blank ? "_blank" : "_parent"}
+    >
+      {piece === breadcrumb.split("/").length - 1 ? (
+        <span class="bg-amber-200 hover:bg-amber-300">{bread}</span>
+      ) : (
+        <>
+          <span class="">{bread}</span>
+          <span class="">/</span>
+        </>
+      )}
+    </a>
+  ))
+) : (
+  <Link href={href}>
+    <slot />
+  </Link>
+)}
