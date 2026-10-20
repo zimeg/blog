@@ -17,9 +17,14 @@ const { Content } = await render(post);
 
 <Layout title={`code: ${post.data.title}`} description={post.data.description}>
   <h1>{post.data.heading ?? post.data.title}</h1>
-  <p>{"> "}{post.data.description}</p>
   <p>
-    <a href={post.data.repo} target="_blank">repo</a>
+    {"> "}
+    {post.data.description}
+  </p>
+  <p>
+    <a href={post.data.repo} target="_blank">
+      repo
+    </a>
   </p>
   <Content />
 </Layout>
