@@ -19,7 +19,10 @@ jobs:
         with:
           persist-credentials: false
       - name: Build and serve the Nix app
-        run: bash .github/scripts/smoke.sh
+        run: |
+          nix shell --inputs-from . \
+            nixpkgs#bash nixpkgs#coreutils nixpkgs#curl nixpkgs#util-linux \
+            --command bash .github/scripts/smoke.sh
   preview:
     needs: build
     name: Preview the build
