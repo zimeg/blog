@@ -7,7 +7,21 @@ on:
       - main
   workflow_dispatch:
 jobs:
+  build:
+    name: Check the Nix runtime
+    runs-on: self-hosted
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout the changes
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Build and serve the Nix app
+        run: bash .github/scripts/smoke.sh
   preview:
+    needs: build
     name: Preview the build
     if: ${{ github.ref != 'refs/heads/main' }}
     runs-on: self-hosted
@@ -49,6 +63,7 @@ jobs:
           PR_REF: ${{ github.ref_name }}
           BRANCH_URL: https://dev.o526.net/branch.txt
   deploy:
+    needs: build
     name: Deploy the site
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: self-hosted
