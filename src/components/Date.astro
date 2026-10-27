@@ -7,7 +7,9 @@ const { posted } = Astro.props;
 ---
 
 <astro-date data-posted={posted}>
-  <time datetime={posted.toISOString()} class={format}>{posted}</time>
+  <time datetime={posted.toISOString()} class={format}>
+    {posted}
+  </time>
 </astro-date>
 
 <script>
