@@ -84,7 +84,7 @@ jobs:
           git config user.email "tom@deorr.co"
           git config user.name "@theorderingmachine"
           git add flake.lock
-          git commit -m "chore(deps): automatic update the latest packages"
+          git commit -m "chore(deps): automatic update to the latest packages"
           git push origin HEAD:main
       - name: Rebuild the blog
         if: steps.update.outputs.changed == 'true'
