@@ -20,7 +20,7 @@
         default = pkgs.mkShell {
           buildInputs = [
             pkgs.awscli2 # https://github.com/aws/aws-cli
-            pkgs.nodejs_24 # https://github.com/nodejs/node
+            pkgs.nodejs # https://github.com/nodejs/node
             pkgs.opentofu # https://github.com/opentofu/opentofu
           ];
         };
@@ -33,7 +33,7 @@
             runtimeInputs = [
               pkgs.bash # https://cgit.git.savannah.gnu.org/cgit/bash.git
               pkgs.coreutils # https://github.com/coreutils/coreutils
-              pkgs.nodejs_24 # https://github.com/nodejs/node
+              pkgs.nodejs # https://github.com/nodejs/node
             ];
             text = ''
               WORKDIR=$(mktemp -d)
