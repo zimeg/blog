@@ -1,0 +1,20 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import AstroDate from "../../../components/Date.astro";
+
+export const title = "note nots meant nothing not nappen";
+export const description = "close to opening but opposite is closure";
+export const posted = new Date("2026-11-01");
+---
+
+<Layout title={title} description={description}>
+  <h1 title={description}>{title}</h1>
+  <p>
+    {"> "}
+    <AstroDate posted={posted} />
+  </p>
+</Layout>
+
+<script>
+  window.close();
+</script>

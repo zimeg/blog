@@ -35,3 +35,12 @@ const notes = await getCollection("notes");
       ))}
   </ul>
 </Layout>
+
+<script>
+  document
+    .querySelector('a[href="/blog/note/4d914734"]')
+    ?.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.open("/blog/note/4d914734");
+    });
+</script>

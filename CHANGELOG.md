@@ -9,6 +9,7 @@ tags follow [conventional commits][commits] but might reference a changed page.
 
 ## released
 
+- `notes`: post: note nots meant nothing not nappen 2026-11-01
 - `ci` build: refresh package with automatic update 2026-10-26
 - `notes`: post: wearing uninformed serve dance off 2026-06-30
 - `arts`: upload song and video of sentence ladter 2026-05-25
